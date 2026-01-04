@@ -1,0 +1,50 @@
+{
+  "name": "@hachiwastudios/web-foundation",
+  "version": "1.0.0",
+  "description": "Professional HTML + CSS + JavaScript starter for rapid web development by Hachi wa Studios",
+  "main": "index.js",
+  "bin": {
+    "hachiwa-web": "./bin/cli.js"
+  },
+  "scripts": {
+    "dev": "npx live-server template --port=3000 --open=/index.html",
+    "start": "npm run dev",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "starter",
+    "template",
+    "boilerplate",
+    "utility-css",
+    "framework",
+    "web-development",
+    "hachiwastudios",
+    "themes",
+    "responsive"
+  ],
+  "author": "Hachi wa Studios",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hachiwastudios/web-foundation"
+  },
+  "bugs": {
+    "email": "hachiwastudios@gmail.com",
+    "url": "https://hachiwastudios.netlify.app/"
+  },
+  "homepage": "https://hachiwastudios.netlify.app/",
+  "files": [
+    "bin/",
+    "template/",
+    ".vscode/"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

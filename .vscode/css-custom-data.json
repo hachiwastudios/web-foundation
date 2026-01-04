@@ -1,0 +1,153 @@
+{
+  "version": 1.1,
+  "properties": [
+    {
+      "name": "--primary-500",
+      "description": "Primary brand color - main actions and brand elements"
+    },
+    {
+      "name": "--primary-600",
+      "description": "Primary darker - hover states"
+    },
+    {
+      "name": "--primary-700",
+      "description": "Primary darkest - active/pressed states"
+    },
+    {
+      "name": "--accent-500",
+      "description": "Accent/secondary color - highlights and CTAs"
+    },
+    {
+      "name": "--accent-600",
+      "description": "Accent darker - hover states"
+    },
+    {
+      "name": "--bg-body",
+      "description": "Main page background color"
+    },
+    {
+      "name": "--bg-surface",
+      "description": "Cards, panels, and elevated surfaces"
+    },
+    {
+      "name": "--bg-surface-secondary",
+      "description": "Secondary surface color - subtle highlights"
+    },
+    {
+      "name": "--text-primary",
+      "description": "Main heading and primary text color"
+    },
+    {
+      "name": "--text-secondary",
+      "description": "Body text and secondary content"
+    },
+    {
+      "name": "--text-tertiary",
+      "description": "Muted text and placeholders"
+    },
+    {
+      "name": "--border-subtle",
+      "description": "Subtle borders and dividers"
+    },
+    {
+      "name": "--border-medium",
+      "description": "Standard borders"
+    },
+    {
+      "name": "--border-bold",
+      "description": "Prominent borders"
+    },
+    {
+      "name": "--status-success",
+      "description": "Success state color (green)"
+    },
+    {
+      "name": "--status-error",
+      "description": "Error state color (red)"
+    },
+    {
+      "name": "--status-warning",
+      "description": "Warning state color (yellow/orange)"
+    },
+    {
+      "name": "--status-info",
+      "description": "Info state color (blue)"
+    },
+    {
+      "name": "--space-1",
+      "description": "4px spacing"
+    },
+    {
+      "name": "--space-2",
+      "description": "8px spacing"
+    },
+    {
+      "name": "--space-3",
+      "description": "12px spacing"
+    },
+    {
+      "name": "--space-4",
+      "description": "16px spacing"
+    },
+    {
+      "name": "--space-6",
+      "description": "24px spacing"
+    },
+    {
+      "name": "--space-8",
+      "description": "32px spacing"
+    },
+    {
+      "name": "--radius-sm",
+      "description": "4px border radius"
+    },
+    {
+      "name": "--radius-md",
+      "description": "8px border radius"
+    },
+    {
+      "name": "--radius-lg",
+      "description": "12px border radius"
+    },
+    {
+      "name": "--shadow-sm",
+      "description": "Small shadow"
+    },
+    {
+      "name": "--shadow-md",
+      "description": "Medium shadow"
+    },
+    {
+      "name": "--shadow-lg",
+      "description": "Large shadow"
+    }
+  ],
+  "atDirectives": [
+    {
+      "name": "@media (min-width: 640px)",
+      "description": "Small breakpoint - Tablet portrait"
+    },
+    {
+      "name": "@media (min-width: 768px)",
+      "description": "Medium breakpoint - Tablet landscape"
+    },
+    {
+      "name": "@media (min-width: 1024px)",
+      "description": "Large breakpoint - Desktop"
+    }
+  ],
+  "pseudoClasses": [
+    {
+      "name": ":hover",
+      "description": "Mouse hover state"
+    },
+    {
+      "name": ":focus",
+      "description": "Keyboard focus state"
+    },
+    {
+      "name": ":active",
+      "description": "Active/pressed state"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "css.validate": true,
+  "css.lint.unknownAtRules": "ignore",
+  "css.customData": [
+    ".vscode/css-custom-data.json"
+  ],
+  "html.customData": [
+    ".vscode/html-custom-data.json"
+  ],
+  "editor.quickSuggestions": {
+    "strings": true,
+    "comments": false,
+    "other": true
+  },
+  "editor.suggest.showWords": true,
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  "html.suggest.html5": true,
+  "html.autoClosingTags": true,
+  "html.completion.attributeDefaultValue": "doublequotes",
+  "css.completion.triggerPropertyValueCompletion": true,
+  "css.completion.completePropertyWithSemicolon": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.snippetSuggestions": "top",
+  "files.associations": {
+    "*.css": "css",
+    "*.js": "javascript",
+    "*.html": "html"
+  },
+  "editor.formatOnSave": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": false,
+    "editor.suggest.insertMode": "replace"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.formatOnSave": false,
+    "editor.suggest.insertMode": "replace"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "html.format.wrapAttributes": "auto",
+  "html.format.wrapLineLength": 120,
+  "css.lint.important": "warning",
+  "css.lint.float": "warning",
+  "html.hover.documentation": true,
+  "html.hover.references": true,
+  "css.hover.documentation": true,
+  "css.hover.references": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestOnTriggerCharacters": true,
+  "html.validate.scripts": true,
+  "html.validate.styles": true
+}

@@ -1,0 +1,166 @@
+{
+  "version": 1.1,
+  "tags": [],
+  "globalAttributes": [
+    {
+      "name": "data-typewriter",
+      "description": "Text to display with typewriter animation. Example: data-typewriter=\"Hello World!\"",
+      "valueSet": "string"
+    },
+    {
+      "name": "data-typewriter-speed",
+      "description": "Typing speed in milliseconds (default: 100). Example: data-typewriter-speed=\"50\"",
+      "valueSet": "number"
+    },
+    {
+      "name": "data-typewriter-delay",
+      "description": "Delay before starting in milliseconds (default: 0). Example: data-typewriter-delay=\"500\"",
+      "valueSet": "number"
+    },
+    {
+      "name": "data-typewriter-cursor",
+      "description": "Show/hide cursor (default: true). Example: data-typewriter-cursor=\"false\"",
+      "values": [
+        {"name": "true", "description": "Show blinking cursor"},
+        {"name": "false", "description": "Hide cursor"}
+      ]
+    },
+    {
+      "name": "data-typewriter-style",
+      "description": "Typewriter visual style. Example: data-typewriter-style=\"cmd\"",
+      "values": [
+        {"name": "default", "description": "Standard typewriter"},
+        {"name": "realistic", "description": "Variable speed for realism"},
+        {"name": "cmd", "description": "Command prompt style (green on black)"},
+        {"name": "hacker", "description": "Matrix hacker style with glitch effects"}
+      ]
+    },
+    {
+      "name": "data-typewriter-loop",
+      "description": "Loop the typing animation. Example: data-typewriter-loop=\"true\"",
+      "values": [
+        {"name": "true", "description": "Loop continuously"},
+        {"name": "false", "description": "Type once"}
+      ]
+    },
+    {
+      "name": "data-theme-switcher",
+      "description": "Enable theme switching on a <select> element. Auto-saves to localStorage."
+    },
+    {
+      "name": "data-active-state",
+      "description": "Enable active state management for navigation links. Adds 'active' class to clicked link."
+    },
+    {
+      "name": "data-smooth-scroll",
+      "description": "Enable smooth scrolling for anchor links. Example: <a href=\"#section\" data-smooth-scroll>"
+    },
+    {
+      "name": "data-modal-open",
+      "description": "ID of modal to open on click. Example: data-modal-open=\"myModal\"",
+      "valueSet": "string"
+    },
+    {
+      "name": "data-modal-close",
+      "description": "Close the current modal when clicked. Add to buttons inside modals."
+    },
+    {
+      "name": "data-tab",
+      "description": "ID of tab panel to show. Example: data-tab=\"tab1\"",
+      "valueSet": "string"
+    },
+    {
+      "name": "data-tabs",
+      "description": "Enable tab functionality for container. Add to parent element."
+    },
+    {
+      "name": "data-validate",
+      "description": "Enable form validation. Add to <form> element."
+    },
+    {
+      "name": "data-validate-email",
+      "description": "Validate input as email format. Add to email input fields."
+    },
+    {
+      "name": "data-scroll-reveal",
+      "description": "Reveal element when scrolled into view with fade-in effect."
+    },
+    {
+      "name": "data-scroll-animate",
+      "description": "Trigger animation when scrolled into view. Example: data-scroll-animate=\"fade-up\"",
+      "values": [
+        {"name": "fade-up", "description": "Fade in from bottom"},
+        {"name": "fade-down", "description": "Fade in from top"},
+        {"name": "fade-left", "description": "Fade in from right"},
+        {"name": "fade-right", "description": "Fade in from left"},
+        {"name": "scale", "description": "Scale up from 80%"}
+      ]
+    },
+    {
+      "name": "data-scroll-delay",
+      "description": "Delay before scroll animation in milliseconds. Example: data-scroll-delay=\"200\"",
+      "valueSet": "number"
+    },
+    {
+      "name": "data-copy",
+      "description": "Text to copy to clipboard on click. Example: data-copy=\"npm install\"",
+      "valueSet": "string"
+    },
+    {
+      "name": "data-animate",
+      "description": "Animation to play on page load. Example: data-animate=\"fade\"",
+      "values": [
+        {"name": "fade", "description": "Fade in"},
+        {"name": "slide-up", "description": "Slide up from bottom"},
+        {"name": "slide-down", "description": "Slide down from top"},
+        {"name": "slide-left", "description": "Slide in from right"},
+        {"name": "slide-right", "description": "Slide in from left"},
+        {"name": "zoom", "description": "Zoom in from 80%"},
+        {"name": "bounce", "description": "Bounce animation (infinite)"},
+        {"name": "shake", "description": "Shake animation"},
+        {"name": "rotate", "description": "Rotate 360deg (infinite)"},
+        {"name": "pulse", "description": "Pulse animation (infinite)"}
+      ]
+    },
+    {
+      "name": "data-animate-delay",
+      "description": "Delay before animation starts in milliseconds. Example: data-animate-delay=\"300\"",
+      "valueSet": "number"
+    },
+    {
+      "name": "data-tooltip",
+      "description": "Tooltip text to display on hover. Example: data-tooltip=\"Click to copy\"",
+      "valueSet": "string"
+    },
+    {
+      "name": "data-dropdown",
+      "description": "Enable dropdown functionality. Add to parent container."
+    },
+    {
+      "name": "data-dropdown-trigger",
+      "description": "Element that triggers the dropdown. Add to button."
+    },
+    {
+      "name": "data-dropdown-content",
+      "description": "Dropdown content panel. Add to dropdown menu."
+    },
+    {
+      "name": "data-lazy-src",
+      "description": "Image source for lazy loading. Example: data-lazy-src=\"image.jpg\"",
+      "valueSet": "string"
+    },
+    {
+      "name": "data-parallax",
+      "description": "Parallax scroll speed multiplier. Example: data-parallax=\"0.5\" (slower) or data-parallax=\"1.5\" (faster)",
+      "valueSet": "number"
+    },
+    {
+      "name": "data-hamburger",
+      "description": "Enable hamburger menu functionality. Add to hamburger button."
+    },
+    {
+      "name": "data-mobile-menu",
+      "description": "Mobile menu panel. Add to nav menu that appears on mobile."
+    }
+  ]
+}
