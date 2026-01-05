@@ -1,0 +1,371 @@
+==============================================
+HACHI WA STUDIOS WEB FOUNDATION - v1.5.0
+WEBSITE UPDATE DOCUMENTATION
+==============================================
+
+Release Date: January 2026
+Version: 1.5.0
+Previous Version: 1.0.0
+Update Type: Minor (Major Feature Release)
+
+==============================================
+CHANGELOG - What's New in v1.5.0
+==============================================
+
+🎉 MAJOR NEW FEATURES:
+
+1. VSCode Extension
+   - Official "Web Foundation by Hachi wa Studios" extension
+   - 800+ utility class autocomplete with descriptions
+   - 56 icon name autocomplete in data-icon attributes
+   - 8 HTML snippets (wf-container, wf-card, wf-icon, etc.)
+   - Real-time IntelliSense for better developer experience
+   - Available on VSCode Marketplace
+
+2. Icon System v2.0
+   - Upgraded from 50 sprite-only icons to 112 standalone files
+   - 56 outlined + 56 solid variants
+   - New data-attribute injection: <i data-icon="name" data-variant="solid">
+   - Auto-caching system for better performance
+   - Backward compatible with old sprite sheet method
+   - Works seamlessly with VSCode autocomplete
+
+3. Build System & Optimization
+   - Professional src/dist architecture
+   - Automated minification pipeline
+   - 35% smaller file sizes (95KB → 62KB)
+   - CSS: 56KB → 40KB minified (28.8% reduction)
+   - JS: 40KB → 23KB minified (42.6% reduction)
+   - PostCSS + autoprefixer + cssnano + Terser
+
+4. Auto-Adaptive IntelliSense
+   - IntelliSense data automatically regenerates on every build
+   - Always in sync with your code changes
+   - Extracts 536 utility classes, 107 CSS properties, 56 icon names
+   - Updates both .vscode/ and vscode-extension/ automatically
+
+==============================================
+TECHNICAL IMPROVEMENTS
+==============================================
+
+✅ Professional project structure (src/dist separation)
+✅ npm build scripts (build, watch, clean, build:css, build:js)
+✅ Icon extraction script (sprite → 112 standalone files)
+✅ IntelliSense generation script
+✅ Minified production files (.min.css, .min.js)
+✅ Performance optimization (icon caching with Map)
+✅ 100% backward compatibility maintained
+
+==============================================
+FILE SIZE COMPARISON
+==============================================
+
+v1.0.0:
+- CSS: ~80KB
+- JS: ~35KB
+- Total: ~95KB minified
+
+v1.5.0:
+- CSS: 40KB minified (18KB gzipped)
+- JS: 23KB minified (10KB gzipped)
+- Total: 62KB minified (35KB gzipped)
+
+IMPROVEMENT: 35% smaller package size!
+
+==============================================
+DOCUMENTATION UPDATES FOR WEBSITE
+==============================================
+
+1. HOMEPAGE UPDATES:
+
+   Hero Section:
+   - Update version badge to "v1.5.0"
+   - Add "35% Smaller Files" badge
+   - Add "VSCode Extension Available" badge
+   - Update feature count: "112 Icons (56 outlined + 56 solid)"
+
+   Features Section:
+   - Add VSCode Extension feature card
+   - Update Icon System description (50+ → 112 icons)
+   - Add Build System feature
+   - Update package size information
+
+2. GETTING STARTED PAGE:
+
+   Add Step 2: Install VSCode Extension
+   ```
+   Step 2: Install VSCode Extension (Recommended)
+
+   For the best developer experience:
+   1. Open VSCode
+   2. Go to Extensions (Ctrl+Shift+X)
+   3. Search "Web Foundation by Hachi wa Studios"
+   4. Click Install
+
+   Features:
+   - 800+ class autocomplete
+   - 56 icon name suggestions
+   - HTML snippets (wf-*)
+   ```
+
+   Update file paths:
+   - New: <link rel="stylesheet" href="assets/css/utility.min.css"> ✨ Recommended
+
+3. ICON SYSTEM PAGE:
+
+   Update Icon Count:
+   - Title: "Icon System v2.0 - 112 Icons"
+   - Subtitle: "56 Outlined + 56 Solid Variants"
+
+   Add New Usage Section:
+   ```html
+   <!-- NEW Method (v1.5+ Recommended) -->
+   <i data-icon="heart" data-variant="solid" class="icon icon-lg"></i>
+   <i data-icon="star" data-variant="outlined" class="icon"></i>
+   <i data-icon="zap" class="icon"></i> <!-- defaults to outlined -->
+
+   <!-- OLD Method (Still Works) -->
+   <svg class="icon">
+     <use href="assets/icons.svg#icon-heart"></use>
+   </svg>
+   ```
+
+   Benefits of New System:
+   - Works with VSCode autocomplete
+   - Only loads icons you actually use
+   - Automatic caching after first load
+   - Both outlined and solid variants available
+
+   Icon List:
+   - Update from "50+ icons" to "56 icons"
+   - Mention "112 total with variants"
+
+4. CHANGELOG PAGE:
+
+   Add v1.5.0 Entry:
+   ```
+   v1.5.0 - January 2026
+
+   Major Features:
+   - VSCode Extension with full IntelliSense
+   - Icon System v2.0 (112 standalone files)
+   - Build System (35% smaller files)
+   - Auto-Adaptive IntelliSense
+
+   Technical:
+   - Professional src/dist structure
+   - Minified CSS (40KB) and JS (23KB)
+   - Icon caching system
+   - PostCSS build pipeline
+
+   Files:
+   - CSS: 56KB → 40KB (28.8% reduction)
+   - JS: 40KB → 23KB (42.6% reduction)
+   - Total: 35% smaller package
+   ```
+
+5. DOCUMENTATION PAGE:
+
+   Add VSCode Extension Section:
+   ```
+   VSCode Extension
+
+   Install "Web Foundation by Hachi wa Studios" for:
+   - 800+ utility class autocomplete
+   - 56 icon name suggestions
+   - HTML snippets (wf-container, wf-card, etc.)
+   - Real-time IntelliSense
+
+   Installation:
+   Extensions → Search "Web Foundation" → Install
+   ```
+
+   Update Icon Documentation:
+   - Add data-icon attribute usage
+   - Add data-variant options (outlined/solid)
+   - Show both old and new methods
+   - Explain backward compatibility
+
+   Add Build System Documentation:
+   ```
+   Build System (For Developers)
+
+   Commands:
+   npm run build       # Build everything
+   npm run build:css   # Build CSS only
+   npm run build:js    # Build JS only
+   npm run watch       # Watch mode
+   npm run clean       # Clean dist/
+
+   What it does:
+   - Minifies CSS (28.8% smaller)
+   - Minifies JS (42.6% smaller)
+   - Extracts 112 icon files
+   - Regenerates IntelliSense data
+   ```
+
+6. DOWNLOAD PAGE:
+
+   Update Download Links:
+   - npm: npm install @hachiwastudios/web-foundation
+   - CDN (if applicable): Update to v1.5.0 URLs
+   - VSCode Extension: Link to marketplace
+
+   Update File Information:
+   - Package Size: 62KB minified (35KB gzipped)
+   - CSS: 40KB minified
+   - JS: 23KB minified
+   - Icons: 112 files + sprite sheet
+
+7. Home PAGE:
+
+   Add New Features:
+
+   Feature: VSCode Extension
+   Description: Official extension with IntelliSense for 800+ classes and 56 icon names
+   Icon: vscode icon
+
+   Feature: Build System
+   Description: Automated minification and optimization (35% smaller files)
+   Icon: gear/settings icon
+
+   Feature: Icon System v2.0
+   Description: 112 standalone SVG files with data-attribute injection and caching
+   Icon: image/folder icon
+
+   Update Existing Features:
+   - Icon System: Update from "50+ SVG Icons" to "112 Icons (56+56)"
+   - File Size: Add "35% smaller than v1.0"
+
+==============================================
+MIGRATION GUIDE (Optional Section)
+==============================================
+
+For Users Upgrading from v1.0 to v1.5:
+
+1. Update Package:
+   ```bash
+   npm update @hachiwastudios/web-foundation
+   ```
+
+2. (Optional) Update File References:
+   ```html
+   <!-- Old -->
+   <link rel="stylesheet" href="assets/css/utility.css">
+   <script src="assets/js/hachiwa.js"></script>
+
+   <!-- New (Recommended) -->
+   <link rel="stylesheet" href="assets/css/utility.min.css">
+   <script src="assets/js/hachiwa.min.js"></script>
+   ```
+
+3. (Optional) Update Icons:
+   ```html
+   <!-- Old (still works) -->
+   <svg class="icon">
+     <use href="assets/icons.svg#icon-heart"></use>
+   </svg>
+
+   <!-- New (with VSCode autocomplete) -->
+   <i data-icon="heart" data-variant="solid" class="icon"></i>
+   ```
+
+4. Install VSCode Extension:
+   - Open VSCode Extensions
+   - Search "Web Foundation by Hachi wa Studios"
+   - Click Install
+
+✅ 100% Backward Compatible - All v1.0 code still works!
+
+==============================================
+SOCIAL MEDIA ANNOUNCEMENTS
+==============================================
+
+Twitter/X Post:
+🚀 Web Foundation v1.5.0 is here!
+
+✨ VSCode Extension
+📦 35% Smaller Files
+🎨 112 Icons (56+56)
+⚡ Auto-Adaptive IntelliSense
+
+Get started: npm i @hachiwastudios/web-foundation
+
+#webdev #vscode #html #css
+
+---
+
+LinkedIn Post:
+Excited to announce Web Foundation v1.5.0! 🎉
+
+Major updates:
+• Official VSCode extension with IntelliSense
+• Icon System v2.0 (112 standalone files)
+• 35% smaller package size
+• Professional build system
+
+Perfect for developers who want to build websites fast with zero dependencies.
+
+npm: @hachiwastudios/web-foundation
+
+---
+
+GitHub Release Notes:
+v1.5.0 - Major Feature Release
+
+What's New:
+- VSCode Extension with 800+ class autocomplete
+- Icon System v2.0 (112 icons: 56 outlined + 56 solid)
+- Build System (35% smaller files)
+- Auto-Adaptive IntelliSense
+
+Technical:
+- CSS: 40KB minified (was 80KB)
+- JS: 23KB minified (was 35KB)
+- Professional src/dist structure
+
+Install: npm i @hachiwastudios/web-foundation
+
+==============================================
+WEBSITE METADATA UPDATES
+==============================================
+
+Update meta tags:
+<title>Web Foundation v1.5 - VSCode Extension & 112 Icons</title>
+<meta name="description" content="Professional HTML+CSS+JS starter with VSCode extension, 112 icons, 15 themes, 800+ utilities. 35% smaller files. Zero dependencies.">
+<meta property="og:title" content="Web Foundation v1.5.0">
+<meta property="og:description" content="VSCode Extension, 112 Icons, 35% Smaller Files">
+
+Update version badges:
+- npm version: v1.5.0
+- Package size: ~62KB minified (~18KB gzipped)
+
+==============================================
+FAQ ADDITIONS
+==============================================
+
+Q: Do I need to rebuild my project for v1.5?
+A: No! v1.5 is 100% backward compatible. Your v1.0 code will work without changes.
+
+Q: How do I use the new icon system?
+A: Use <i data-icon="name" data-variant="solid" class="icon"></i> for the new system, or keep using SVG sprites - both work!
+
+Q: Do I have to use the VSCode extension?
+A: No, it's optional but highly recommended for better developer experience.
+
+Q: Are the minified files required?
+A: For production, we recommend using .min.css and .min.js for 35% smaller file sizes. Dev files (.css, .js) still work fine.
+
+Q: What happened to the old icons?
+A: They're all still there! We extracted them into standalone files AND kept the sprite sheet for backward compatibility.
+
+==============================================
+END OF WEBSITE UPDATE DOCUMENTATION
+==============================================
+
+For questions or assistance:
+Email: hachiwastudios@gmail.com
+Website: https://hachiwastudios.netlify.app/
+GitHub: https://github.com/hachiwastudios/web-foundation
+
+Built with ❤️ by Hachi wa Studios

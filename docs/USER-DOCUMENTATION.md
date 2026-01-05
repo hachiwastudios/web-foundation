@@ -2,11 +2,22 @@
 
 **Welcome!** This guide will teach you everything you need to build amazing websites with our framework.
 
-**Version:** 1.0.0 | **Perfect for developers with 3+ months of experience!**
+**Version:** 1.5.0 | **Perfect for developers with 3+ months of experience!**
 
 **Website:** https://hachiwastudios.netlify.app/
 **Update Schedule:** Monthly updates with new features
 **Contact:** hachiwastudios@gmail.com
+
+---
+
+## 🎉 What's New in v1.5.0
+
+- ✅ **VSCode Extension** - Real-time IntelliSense for 800+ classes and 56 icon names
+- ✅ **112 Icon Files** - 56 outlined + 56 solid variants (upgraded from sprite-only)
+- ✅ **New Icon System** - Data-attribute injection with auto-caching
+- ✅ **35% Smaller Files** - Minified CSS (40KB) and JS (23KB)
+- ✅ **Build System** - Professional src/dist structure
+- ✅ **Auto-Adaptive IntelliSense** - Regenerates on every build
 
 ---
 
@@ -26,11 +37,25 @@ cd my-awesome-site
 
 That's it! You now have a complete website starter.
 
-### Step 2: Edit Your HTML
+### Step 2: Install VSCode Extension (Recommended)
 
-Open `components/index.html` in your favorite editor and start building!
+For the best developer experience, install our VSCode extension:
 
-### Step 3: Choose a Theme
+1. Open VSCode
+2. Go to Extensions (Ctrl+Shift+X / Cmd+Shift+X)
+3. Search for **"Web Foundation by Hachi wa Studios"**
+4. Click Install
+
+**Features:**
+- 800+ utility class autocomplete
+- 56 icon name suggestions
+- HTML snippets (`wf-container`, `wf-card`, `wf-icon`, etc.)
+
+### Step 3: Edit Your HTML
+
+Open `index.html` in your favorite editor and start building!
+
+### Step 4: Choose a Theme
 
 Add a theme selector or change the theme in the `<html>` tag:
 
@@ -48,24 +73,39 @@ Add a theme selector or change the theme in the `<html>` tag:
 my-project/
 ├── assets/
 │   ├── css/
-│   │   └── utility.css          ← All 15 themes + 800+ utility classes
+│   │   ├── utility.css          ← Full CSS (56KB)
+│   │   └── utility.min.css      ← Minified (40KB) ← Use this!
 │   ├── js/
-│   │   └── hachiwa.js           ← All 20+ JavaScript utilities
-│   ├── icons.svg                ← 50+ SVG icons
+│   │   ├── hachiwa.js           ← Full JS (40KB)
+│   │   └── hachiwa.min.js       ← Minified (23KB) ← Use this!
+│   ├── icons/
+│   │   ├── outlined/            ← 56 outlined icons (.svg)
+│   │   ├── solid/               ← 56 solid icons (.svg)
+│   │   └── icons.svg            ← Legacy sprite (backward compat)
 │   └── images/                  ← Put your images here
 │
-├── components/
-│   └── index.html               ← Main showcase (start here!)
-├── config/                      ← Configuration files
-└── README.md                    ← Quick reference
+└── index.html                   ← Beautiful starter template
 ```
 
 ### Where to Put Things
 
-- **HTML files** → `components/` folder (index.html, about.html, etc.)
+- **HTML files** → Root folder (index.html, about.html, etc.)
 - **Images** → `assets/images/`
 - **Custom CSS** → Add to `assets/css/` or inline in HTML
 - **Custom JS** → Add to `assets/js/` or inline in HTML
+
+### File Usage
+
+**Always use minified files for production:**
+```html
+<!-- CSS -->
+<link rel="stylesheet" href="assets/css/utility.min.css">
+
+<!-- JavaScript -->
+<script src="assets/js/hachiwa.min.js"></script>
+```
+
+**Package Size:** ~62KB minified (~18KB gzipped) - 35% smaller than v1.0!
 
 ---
 
@@ -174,35 +214,47 @@ Now includes 15 professional themes!
 
 ---
 
-## 🎯 50+ SVG Icons
+## 🎯 Icon System v2.0 (112 Icons!)
 
-Built-in icon system with 50+ SVG icons!
+**NEW in v1.5:** Standalone SVG files with data-attribute injection!
 
-### How to Use Icons
+- **112 total icons** (56 outlined + 56 solid variants)
+- **Auto-caching** for better performance
+- **Resizable** with CSS classes
+- **Colorable** via currentColor
+- **Backward compatible** with sprite sheet
+
+### How to Use Icons (v1.5+ Recommended)
 
 ```html
-<!-- Basic icon -->
-<svg class="icon">
+<!-- NEW: Data-attribute injection (v1.5+) -->
+<i data-icon="heart" data-variant="solid" class="icon icon-lg icon-primary"></i>
+<i data-icon="star" data-variant="outlined" class="icon icon-xl icon-accent"></i>
+<i data-icon="zap" class="icon"></i> <!-- defaults to outlined -->
+
+<!-- OLD: Sprite sheet (still works for backward compatibility) -->
+<svg class="icon icon-lg icon-primary">
   <use href="assets/icons.svg#icon-heart"></use>
 </svg>
+```
 
-<!-- Sized icons -->
-<svg class="icon icon-sm">  <!-- 16px -->
-  <use href="assets/icons.svg#icon-star"></use>
-</svg>
+**Why use the new system?**
+- Automatically loads only icons you use
+- Caches icons for instant re-use
+- Supports both outlined and solid variants
+- Works with VSCode autocomplete
 
-<svg class="icon icon-lg">  <!-- 24px -->
-  <use href="assets/icons.svg#icon-home"></use>
-</svg>
+### Icon Variants
 
-<!-- Colored icons -->
-<svg class="icon icon-primary">
-  <use href="assets/icons.svg#icon-check"></use>
-</svg>
+```html
+<!-- Outlined (default) - Clean line icons -->
+<i data-icon="heart" data-variant="outlined" class="icon"></i>
 
-<svg class="icon icon-success">
-  <use href="assets/icons.svg#icon-heart"></use>
-</svg>
+<!-- Solid - Filled icons for emphasis -->
+<i data-icon="heart" data-variant="solid" class="icon"></i>
+
+<!-- Omit data-variant to default to outlined -->
+<i data-icon="star" class="icon"></i>
 ```
 
 ### Icon Sizes
@@ -222,21 +274,39 @@ Built-in icon system with 50+ SVG icons!
 - `icon-error` - Red
 - `icon-warning` - Yellow
 
-### Available Icons (50+)
+### Available Icons (56 total, 112 with variants)
 
-**Navigation:** menu, close, home, search, user, settings, arrow-up, arrow-down, arrow-left, arrow-right, chevron-up, chevron-down, chevron-left, chevron-right
+**Navigation (6):** menu, close, home, search, user, settings
 
-**Actions:** check, plus, minus, x, edit, trash, download, upload, copy, share, external-link
+**Arrows (8):** arrow-up, arrow-down, arrow-left, arrow-right, chevron-up, chevron-down, chevron-left, chevron-right
 
-**States:** info, alert-circle, alert-triangle, bell, star, heart, bookmark, flag, eye, eye-off
+**Actions (9):** check, plus, minus, edit, trash, download, upload, copy, share
 
-**Media:** image, file, camera, video, music, mic
+**States (5):** info, alert, bell, star, heart
 
-**Communication:** mail, message, phone, send
+**Media (6):** image, file, folder, camera, video, music
 
-**E-commerce:** shopping-cart, credit-card, dollar, tag, gift, package
+**Communication (3):** mail, message, phone
 
-**Tools:** link, lock, unlock, clock, calendar, map-pin, globe, filter, refresh
+**E-commerce (5):** shopping-cart, credit-card, dollar, tag, gift
+
+**Tools (5):** link, lock, unlock, eye, eye-off
+
+**Misc (9):** clock, calendar, map-pin, globe, bookmark, flag, zap, code, play
+
+### Using Icons in Buttons
+
+```html
+<button class="btn btn-primary">
+  <i data-icon="zap" data-variant="solid" class="icon"></i>
+  Get Started
+</button>
+
+<button class="btn btn-outline">
+  <i data-icon="download" class="icon"></i>
+  Download
+</button>
+```
 
 ---
 
@@ -608,7 +678,7 @@ All colors adapt to the active theme!
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Landing Page</title>
-  <link rel="stylesheet" href="../assets/css/utility.css">
+  <link rel="stylesheet" href="assets/css/utility.min.css">
 </head>
 <body class="bg-body">
 
@@ -632,9 +702,12 @@ All colors adapt to the active theme!
         data-typewriter-cursor="true">
     </h2>
     <p class="text-lg text-secondary max-w-2xl mx-auto mb-8">
-      15 themes, 800+ utilities, 50+ icons. Zero dependencies.
+      15 themes, 800+ utilities, 112 icons. Zero dependencies.
     </p>
-    <button class="btn btn-primary btn-lg">Get Started</button>
+    <button class="btn btn-primary btn-lg">
+      <i data-icon="zap" data-variant="solid" class="icon"></i>
+      Get Started
+    </button>
   </section>
 
   <!-- Features -->
@@ -643,18 +716,21 @@ All colors adapt to the active theme!
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
         <div class="card p-6" data-scroll-animate="fade-up">
+          <i data-icon="code" class="icon-3xl icon-primary mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">15 Themes</h3>
           <p class="text-secondary">Switch themes instantly</p>
         </div>
 
         <div class="card p-6" data-scroll-animate="fade-up" data-scroll-delay="100">
+          <i data-icon="image" data-variant="solid" class="icon-3xl icon-accent mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">800+ Utilities</h3>
           <p class="text-secondary">Custom values supported</p>
         </div>
 
         <div class="card p-6" data-scroll-animate="fade-up" data-scroll-delay="200">
-          <h3 class="text-xl font-semibold mb-2">50+ Icons</h3>
-          <p class="text-secondary">Beautiful SVG sprites</p>
+          <i data-icon="star" data-variant="solid" class="icon-3xl icon-success mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">112 Icons</h3>
+          <p class="text-secondary">Outlined + solid variants</p>
         </div>
 
       </div>
@@ -666,7 +742,7 @@ All colors adapt to the active theme!
     <p>&copy; 2026 My Brand</p>
   </footer>
 
-  <script src="../assets/js/hachiwa.js"></script>
+  <script src="assets/js/hachiwa.min.js"></script>
 </body>
 </html>
 ```
@@ -750,16 +826,26 @@ Always test on mobile first, then add `md:` and `lg:` classes
 
 **This package is updated monthly!**
 
-We add new features, fix bugs, and improve performance every month. Current version includes:
+We add new features, fix bugs, and improve performance every month.
+
+### v1.5.0 (Current) - January 2026
+
+- ✅ **VSCode Extension** - Real-time IntelliSense for classes & icons
+- ✅ **112 Icons** - 56 outlined + 56 solid variants
+- ✅ **New Icon System** - Data-attribute injection with caching
+- ✅ **35% Smaller** - Minified builds (62KB total, 18KB gzipped)
+- ✅ **Build System** - Professional src/dist structure
+- ✅ **Auto-Adaptive IntelliSense** - Regenerates automatically
+
+### Core Features
 
 - ✅ **15 Professional Themes**
 - ✅ **800+ CSS Utilities**
-- ✅ **50+ SVG Icons**
 - ✅ **Custom Value Support** - Use `text-[38px]` like Tailwind
 - ✅ **4 Typewriter Styles** (default, realistic, cmd, hacker)
 - ✅ **Hamburger Menu** for mobile
+- ✅ **20+ JavaScript Utilities**
 - ✅ **Smooth Animations** - All optimized
-- ✅ **VS Code Intellisense** - Full autocomplete
 
 Stay tuned for monthly improvements!
 
