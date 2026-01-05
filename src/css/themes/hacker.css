@@ -1,0 +1,36 @@
+/* THEMES - HACKER */
+
+[data-theme="hacker"] {
+  --primary-500: #00ff41;
+  --primary-600: #00d936;
+  --primary-700: #00b32b;
+
+  --accent-500: #00ffff;
+  --accent-600: #00e6e6;
+
+  --bg-body: #000000;
+  --bg-surface: #0d0d0d;
+  --bg-surface-secondary: #1a1a1a;
+  --text-primary: #00ff41;
+  --text-secondary: #00cc33;
+  --text-tertiary: #009926;
+  --text-on-accent: #000000;
+  --border-subtle: #1a3324;
+  --border-medium: #264d36;
+  --border-bold: #336649;
+
+  --btn-primary-bg: #00ff41;
+  --btn-primary-hover: #00cc33;
+  --btn-primary-text: #000000;
+
+  --status-success: #00ff41;
+  --status-error: #ff0000;
+  --status-warning: #ffff00;
+  --status-info: #00ffff;
+}
+
+/* =========================
+   THEME 7: CORPORATE (PROFESSIONAL)
+   Best for: Corporate sites, B2B, professional services
+   ========================= */
+[data-theme="hacker"] select,

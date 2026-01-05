@@ -2,152 +2,539 @@
   "version": 1.1,
   "properties": [
     {
-      "name": "--primary-500",
-      "description": "Primary brand color - main actions and brand elements"
+      "name": "--font-primary",
+      "description": "Value: 'Montserrat', sans-serif",
+      "syntax": "'Montserrat', sans-serif"
     },
     {
-      "name": "--primary-600",
-      "description": "Primary darker - hover states"
+      "name": "--font-accent",
+      "description": "Value: 'Edu NSW ACT Cursive', cursive",
+      "syntax": "'Edu NSW ACT Cursive', cursive"
     },
     {
-      "name": "--primary-700",
-      "description": "Primary darkest - active/pressed states"
+      "name": "--font-mono",
+      "description": "Value: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+      "syntax": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
     },
     {
-      "name": "--accent-500",
-      "description": "Accent/secondary color - highlights and CTAs"
+      "name": "--text-xs",
+      "description": "Value: 0.75rem",
+      "syntax": "0.75rem"
     },
     {
-      "name": "--accent-600",
-      "description": "Accent darker - hover states"
+      "name": "--text-sm",
+      "description": "Value: 0.875rem",
+      "syntax": "0.875rem"
     },
     {
-      "name": "--bg-body",
-      "description": "Main page background color"
+      "name": "--text-base",
+      "description": "Value: 1rem",
+      "syntax": "1rem"
     },
     {
-      "name": "--bg-surface",
-      "description": "Cards, panels, and elevated surfaces"
+      "name": "--text-lg",
+      "description": "Value: 1.125rem",
+      "syntax": "1.125rem"
     },
     {
-      "name": "--bg-surface-secondary",
-      "description": "Secondary surface color - subtle highlights"
+      "name": "--text-xl",
+      "description": "Value: 1.25rem",
+      "syntax": "1.25rem"
     },
     {
-      "name": "--text-primary",
-      "description": "Main heading and primary text color"
+      "name": "--text-2xl",
+      "description": "Value: 1.5rem",
+      "syntax": "1.5rem"
     },
     {
-      "name": "--text-secondary",
-      "description": "Body text and secondary content"
+      "name": "--text-3xl",
+      "description": "Value: 2rem",
+      "syntax": "2rem"
     },
     {
-      "name": "--text-tertiary",
-      "description": "Muted text and placeholders"
+      "name": "--text-4xl",
+      "description": "Value: 3rem",
+      "syntax": "3rem"
     },
     {
-      "name": "--border-subtle",
-      "description": "Subtle borders and dividers"
+      "name": "--text-5xl",
+      "description": "Value: 3.5rem",
+      "syntax": "3.5rem"
     },
     {
-      "name": "--border-medium",
-      "description": "Standard borders"
+      "name": "--weight-light",
+      "description": "Value: 300",
+      "syntax": "300"
     },
     {
-      "name": "--border-bold",
-      "description": "Prominent borders"
+      "name": "--weight-normal",
+      "description": "Value: 400",
+      "syntax": "400"
     },
     {
-      "name": "--status-success",
-      "description": "Success state color (green)"
+      "name": "--weight-medium",
+      "description": "Value: 500",
+      "syntax": "500"
     },
     {
-      "name": "--status-error",
-      "description": "Error state color (red)"
+      "name": "--weight-semibold",
+      "description": "Value: 600",
+      "syntax": "600"
     },
     {
-      "name": "--status-warning",
-      "description": "Warning state color (yellow/orange)"
+      "name": "--weight-bold",
+      "description": "Value: 700",
+      "syntax": "700"
     },
     {
-      "name": "--status-info",
-      "description": "Info state color (blue)"
+      "name": "--weight-extrabold",
+      "description": "Value: 800",
+      "syntax": "800"
+    },
+    {
+      "name": "--leading-none",
+      "description": "Value: 1",
+      "syntax": "1"
+    },
+    {
+      "name": "--leading-tight",
+      "description": "Value: 1.2",
+      "syntax": "1.2"
+    },
+    {
+      "name": "--leading-normal",
+      "description": "Value: 1.5",
+      "syntax": "1.5"
+    },
+    {
+      "name": "--leading-loose",
+      "description": "Value: 1.8",
+      "syntax": "1.8"
+    },
+    {
+      "name": "--space-0",
+      "description": "Value: 0",
+      "syntax": "0"
     },
     {
       "name": "--space-1",
-      "description": "4px spacing"
+      "description": "Value: 0.25rem",
+      "syntax": "0.25rem"
     },
     {
       "name": "--space-2",
-      "description": "8px spacing"
+      "description": "Value: 0.5rem",
+      "syntax": "0.5rem"
     },
     {
       "name": "--space-3",
-      "description": "12px spacing"
+      "description": "Value: 0.75rem",
+      "syntax": "0.75rem"
     },
     {
       "name": "--space-4",
-      "description": "16px spacing"
+      "description": "Value: 1rem",
+      "syntax": "1rem"
+    },
+    {
+      "name": "--space-5",
+      "description": "Value: 1.25rem",
+      "syntax": "1.25rem"
     },
     {
       "name": "--space-6",
-      "description": "24px spacing"
+      "description": "Value: 1.5rem",
+      "syntax": "1.5rem"
     },
     {
       "name": "--space-8",
-      "description": "32px spacing"
+      "description": "Value: 2rem",
+      "syntax": "2rem"
+    },
+    {
+      "name": "--space-10",
+      "description": "Value: 2.5rem",
+      "syntax": "2.5rem"
+    },
+    {
+      "name": "--space-12",
+      "description": "Value: 3rem",
+      "syntax": "3rem"
+    },
+    {
+      "name": "--space-16",
+      "description": "Value: 4rem",
+      "syntax": "4rem"
+    },
+    {
+      "name": "--space-20",
+      "description": "Value: 5rem",
+      "syntax": "5rem"
+    },
+    {
+      "name": "--space-24",
+      "description": "Value: 6rem",
+      "syntax": "6rem"
+    },
+    {
+      "name": "--container-sm",
+      "description": "Value: 640px",
+      "syntax": "640px"
+    },
+    {
+      "name": "--container-md",
+      "description": "Value: 768px",
+      "syntax": "768px"
+    },
+    {
+      "name": "--container-lg",
+      "description": "Value: 1024px",
+      "syntax": "1024px"
+    },
+    {
+      "name": "--container-xl",
+      "description": "Value: 1280px",
+      "syntax": "1280px"
+    },
+    {
+      "name": "--container-2xl",
+      "description": "Value: 1536px",
+      "syntax": "1536px"
+    },
+    {
+      "name": "--radius-none",
+      "description": "Value: 0",
+      "syntax": "0"
     },
     {
       "name": "--radius-sm",
-      "description": "4px border radius"
+      "description": "Value: 4px",
+      "syntax": "4px"
     },
     {
       "name": "--radius-md",
-      "description": "8px border radius"
+      "description": "Value: 8px",
+      "syntax": "8px"
     },
     {
       "name": "--radius-lg",
-      "description": "12px border radius"
+      "description": "Value: 16px",
+      "syntax": "16px"
+    },
+    {
+      "name": "--radius-xl",
+      "description": "Value: 24px",
+      "syntax": "24px"
+    },
+    {
+      "name": "--radius-2xl",
+      "description": "Value: 32px",
+      "syntax": "32px"
+    },
+    {
+      "name": "--radius-full",
+      "description": "Value: 9999px",
+      "syntax": "9999px"
+    },
+    {
+      "name": "--shadow-none",
+      "description": "Value: none",
+      "syntax": "none"
     },
     {
       "name": "--shadow-sm",
-      "description": "Small shadow"
+      "description": "Value: 0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "syntax": "0 1px 2px 0 rgba(0, 0, 0, 0.05)"
+    },
+    {
+      "name": "--shadow",
+      "description": "Value: 0 1px 3px 0 rgba(0, 0, 0, 0.1)",
+      "syntax": "0 1px 3px 0 rgba(0, 0, 0, 0.1)"
     },
     {
       "name": "--shadow-md",
-      "description": "Medium shadow"
+      "description": "Value: 0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+      "syntax": "0 4px 6px -1px rgba(0, 0, 0, 0.1)"
     },
     {
       "name": "--shadow-lg",
-      "description": "Large shadow"
-    }
-  ],
-  "atDirectives": [
-    {
-      "name": "@media (min-width: 640px)",
-      "description": "Small breakpoint - Tablet portrait"
+      "description": "Value: 0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+      "syntax": "0 10px 15px -3px rgba(0, 0, 0, 0.1)"
     },
     {
-      "name": "@media (min-width: 768px)",
-      "description": "Medium breakpoint - Tablet landscape"
+      "name": "--shadow-xl",
+      "description": "Value: 0 20px 25px -5px rgba(0, 0, 0, 0.1)",
+      "syntax": "0 20px 25px -5px rgba(0, 0, 0, 0.1)"
     },
     {
-      "name": "@media (min-width: 1024px)",
-      "description": "Large breakpoint - Desktop"
-    }
-  ],
-  "pseudoClasses": [
-    {
-      "name": ":hover",
-      "description": "Mouse hover state"
+      "name": "--shadow-2xl",
+      "description": "Value: 0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+      "syntax": "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
     },
     {
-      "name": ":focus",
-      "description": "Keyboard focus state"
+      "name": "--shadow-inner",
+      "description": "Value: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+      "syntax": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)"
     },
     {
-      "name": ":active",
-      "description": "Active/pressed state"
+      "name": "--transition-none",
+      "description": "Value: none",
+      "syntax": "none"
+    },
+    {
+      "name": "--transition-fast",
+      "description": "Value: 150ms ease-in-out",
+      "syntax": "150ms ease-in-out"
+    },
+    {
+      "name": "--transition",
+      "description": "Value: 250ms ease-in-out",
+      "syntax": "250ms ease-in-out"
+    },
+    {
+      "name": "--transition-normal",
+      "description": "Value: 300ms ease-in-out",
+      "syntax": "300ms ease-in-out"
+    },
+    {
+      "name": "--transition-slow",
+      "description": "Value: 500ms ease-in-out",
+      "syntax": "500ms ease-in-out"
+    },
+    {
+      "name": "--primary-50",
+      "description": "Value: #eff6ff",
+      "syntax": "#eff6ff"
+    },
+    {
+      "name": "--primary-100",
+      "description": "Value: #dbeafe",
+      "syntax": "#dbeafe"
+    },
+    {
+      "name": "--primary-200",
+      "description": "Value: #bfdbfe",
+      "syntax": "#bfdbfe"
+    },
+    {
+      "name": "--primary-300",
+      "description": "Value: #93c5fd",
+      "syntax": "#93c5fd"
+    },
+    {
+      "name": "--primary-400",
+      "description": "Value: #60a5fa",
+      "syntax": "#60a5fa"
+    },
+    {
+      "name": "--primary-500",
+      "description": "Value: #3b82f6",
+      "syntax": "#3b82f6"
+    },
+    {
+      "name": "--primary-600",
+      "description": "Value: #2563eb",
+      "syntax": "#2563eb"
+    },
+    {
+      "name": "--primary-700",
+      "description": "Value: #1d4ed8",
+      "syntax": "#1d4ed8"
+    },
+    {
+      "name": "--primary-800",
+      "description": "Value: #1e40af",
+      "syntax": "#1e40af"
+    },
+    {
+      "name": "--primary-900",
+      "description": "Value: #1e3a8a",
+      "syntax": "#1e3a8a"
+    },
+    {
+      "name": "--accent-50",
+      "description": "Value: #f0fdfa",
+      "syntax": "#f0fdfa"
+    },
+    {
+      "name": "--accent-100",
+      "description": "Value: #ccfbf1",
+      "syntax": "#ccfbf1"
+    },
+    {
+      "name": "--accent-200",
+      "description": "Value: #99f6e4",
+      "syntax": "#99f6e4"
+    },
+    {
+      "name": "--accent-300",
+      "description": "Value: #5eead4",
+      "syntax": "#5eead4"
+    },
+    {
+      "name": "--accent-400",
+      "description": "Value: #2dd4bf",
+      "syntax": "#2dd4bf"
+    },
+    {
+      "name": "--accent-500",
+      "description": "Value: #14b8a6",
+      "syntax": "#14b8a6"
+    },
+    {
+      "name": "--accent-600",
+      "description": "Value: #0d9488",
+      "syntax": "#0d9488"
+    },
+    {
+      "name": "--accent-700",
+      "description": "Value: #0f766e",
+      "syntax": "#0f766e"
+    },
+    {
+      "name": "--accent-800",
+      "description": "Value: #115e59",
+      "syntax": "#115e59"
+    },
+    {
+      "name": "--accent-900",
+      "description": "Value: #134e4a",
+      "syntax": "#134e4a"
+    },
+    {
+      "name": "--gray-50",
+      "description": "Value: #f9fafb",
+      "syntax": "#f9fafb"
+    },
+    {
+      "name": "--gray-100",
+      "description": "Value: #f3f4f6",
+      "syntax": "#f3f4f6"
+    },
+    {
+      "name": "--gray-200",
+      "description": "Value: #e5e7eb",
+      "syntax": "#e5e7eb"
+    },
+    {
+      "name": "--gray-300",
+      "description": "Value: #d1d5db",
+      "syntax": "#d1d5db"
+    },
+    {
+      "name": "--gray-400",
+      "description": "Value: #9ca3af",
+      "syntax": "#9ca3af"
+    },
+    {
+      "name": "--gray-500",
+      "description": "Value: #6b7280",
+      "syntax": "#6b7280"
+    },
+    {
+      "name": "--gray-600",
+      "description": "Value: #4b5563",
+      "syntax": "#4b5563"
+    },
+    {
+      "name": "--gray-700",
+      "description": "Value: #374151",
+      "syntax": "#374151"
+    },
+    {
+      "name": "--gray-800",
+      "description": "Value: #1f2937",
+      "syntax": "#1f2937"
+    },
+    {
+      "name": "--gray-900",
+      "description": "Value: #111827",
+      "syntax": "#111827"
+    },
+    {
+      "name": "--bg-body",
+      "description": "Value: #F5F8FA",
+      "syntax": "#F5F8FA"
+    },
+    {
+      "name": "--bg-surface",
+      "description": "Value: #FFFFFF",
+      "syntax": "#FFFFFF"
+    },
+    {
+      "name": "--bg-surface-secondary",
+      "description": "Value: #F0F4F8",
+      "syntax": "#F0F4F8"
+    },
+    {
+      "name": "--text-primary",
+      "description": "Value: #243142",
+      "syntax": "#243142"
+    },
+    {
+      "name": "--text-secondary",
+      "description": "Value: #617385",
+      "syntax": "#617385"
+    },
+    {
+      "name": "--text-tertiary",
+      "description": "Value: #9BA9B8",
+      "syntax": "#9BA9B8"
+    },
+    {
+      "name": "--text-on-accent",
+      "description": "Value: #FFFFFF",
+      "syntax": "#FFFFFF"
+    },
+    {
+      "name": "--border-subtle",
+      "description": "Value: #E1E6EB",
+      "syntax": "#E1E6EB"
+    },
+    {
+      "name": "--border-medium",
+      "description": "Value: #D1D9E0",
+      "syntax": "#D1D9E0"
+    },
+    {
+      "name": "--border-bold",
+      "description": "Value: #a8b3c1",
+      "syntax": "#a8b3c1"
+    },
+    {
+      "name": "--btn-primary-bg",
+      "description": "Value: #2563eb",
+      "syntax": "#2563eb"
+    },
+    {
+      "name": "--btn-primary-hover",
+      "description": "Value: #1d4ed8",
+      "syntax": "#1d4ed8"
+    },
+    {
+      "name": "--btn-primary-text",
+      "description": "Value: #FFFFFF",
+      "syntax": "#FFFFFF"
+    },
+    {
+      "name": "--status-success",
+      "description": "Value: #00C49A",
+      "syntax": "#00C49A"
+    },
+    {
+      "name": "--status-error",
+      "description": "Value: #D62B3F",
+      "syntax": "#D62B3F"
+    },
+    {
+      "name": "--status-warning",
+      "description": "Value: #f59e0b",
+      "syntax": "#f59e0b"
+    },
+    {
+      "name": "--status-info",
+      "description": "Value: #3b82f6",
+      "syntax": "#3b82f6"
     }
   ]
 }

@@ -3,164 +3,2522 @@
   "tags": [],
   "globalAttributes": [
     {
+      "name": "class",
+      "description": "Hachi wa Studios utility classes",
+      "valueSet": "hachiwaClasses"
+    },
+    {
+      "name": "data-theme",
+      "description": "Theme selector for Hachi wa Studios",
+      "values": [
+        {
+          "name": "default",
+          "description": "Default e-commerce theme (blue)"
+        },
+        {
+          "name": "dark",
+          "description": "Dark mode theme"
+        },
+        {
+          "name": "portfolio",
+          "description": "Elegant portfolio theme (purple)"
+        },
+        {
+          "name": "girly",
+          "description": "Girly theme (pink)"
+        },
+        {
+          "name": "gaming",
+          "description": "Gaming theme (neon green)"
+        },
+        {
+          "name": "hacker",
+          "description": "Hacker theme (matrix green)"
+        },
+        {
+          "name": "corporate",
+          "description": "Corporate theme (navy blue)"
+        },
+        {
+          "name": "nature",
+          "description": "Nature theme (earth green)"
+        },
+        {
+          "name": "creative",
+          "description": "Creative theme (vibrant orange)"
+        },
+        {
+          "name": "minimal",
+          "description": "Minimal theme (monochrome)"
+        },
+        {
+          "name": "sunset",
+          "description": "Sunset theme (orange/pink gradient)"
+        },
+        {
+          "name": "tech",
+          "description": "Tech theme (cyan/blue)"
+        },
+        {
+          "name": "pastel",
+          "description": "Pastel theme (soft colors)"
+        },
+        {
+          "name": "ocean",
+          "description": "Ocean theme (blue/teal)"
+        },
+        {
+          "name": "retro",
+          "description": "Retro theme (vintage colors)"
+        }
+      ]
+    },
+    {
+      "name": "data-icon",
+      "description": "Icon name for automatic injection (Icon System v2.0)",
+      "valueSet": "hachiwaIcons"
+    },
+    {
+      "name": "data-variant",
+      "description": "Icon variant (outlined or solid)",
+      "values": [
+        {
+          "name": "outlined",
+          "description": "Outlined/stroke-based icon (default)"
+        },
+        {
+          "name": "solid",
+          "description": "Filled/solid icon"
+        }
+      ]
+    },
+    {
       "name": "data-typewriter",
-      "description": "Text to display with typewriter animation. Example: data-typewriter=\"Hello World!\"",
-      "valueSet": "string"
-    },
-    {
-      "name": "data-typewriter-speed",
-      "description": "Typing speed in milliseconds (default: 100). Example: data-typewriter-speed=\"50\"",
-      "valueSet": "number"
-    },
-    {
-      "name": "data-typewriter-delay",
-      "description": "Delay before starting in milliseconds (default: 0). Example: data-typewriter-delay=\"500\"",
-      "valueSet": "number"
-    },
-    {
-      "name": "data-typewriter-cursor",
-      "description": "Show/hide cursor (default: true). Example: data-typewriter-cursor=\"false\"",
+      "description": "Typewriter effect type",
       "values": [
-        {"name": "true", "description": "Show blinking cursor"},
-        {"name": "false", "description": "Hide cursor"}
+        {
+          "name": "classic",
+          "description": "Classic typewriter effect"
+        },
+        {
+          "name": "smooth",
+          "description": "Smooth continuous typing"
+        },
+        {
+          "name": "glitch",
+          "description": "Glitch effect typewriter"
+        },
+        {
+          "name": "wave",
+          "description": "Wave animation typewriter"
+        }
       ]
     },
     {
-      "name": "data-typewriter-style",
-      "description": "Typewriter visual style. Example: data-typewriter-style=\"cmd\"",
+      "name": "data-speed",
+      "description": "Typewriter speed in milliseconds",
+      "valueSet": "typewriterSpeed"
+    }
+  ],
+  "valueSets": [
+    {
+      "name": "hachiwaClasses",
       "values": [
-        {"name": "default", "description": "Standard typewriter"},
-        {"name": "realistic", "description": "Variable speed for realism"},
-        {"name": "cmd", "description": "Command prompt style (green on black)"},
-        {"name": "hacker", "description": "Matrix hacker style with glitch effects"}
+        {
+          "name": "1s",
+          "description": "Utility class: 1s"
+        },
+        {
+          "name": "2",
+          "description": "Utility class: 2"
+        },
+        {
+          "name": "25rem",
+          "description": "Utility class: 25rem"
+        },
+        {
+          "name": "2s",
+          "description": "Utility class: 2s"
+        },
+        {
+          "name": "3s",
+          "description": "Utility class: 3s"
+        },
+        {
+          "name": "4",
+          "description": "Utility class: 4"
+        },
+        {
+          "name": "5rem",
+          "description": "Utility class: 5rem"
+        },
+        {
+          "name": "5s",
+          "description": "Utility class: 5s"
+        },
+        {
+          "name": "625rem",
+          "description": "Utility class: 625rem"
+        },
+        {
+          "name": "6s",
+          "description": "Utility class: 6s"
+        },
+        {
+          "name": "75rem",
+          "description": "Utility class: 75rem"
+        },
+        {
+          "name": "absolute",
+          "description": "Utility class: absolute"
+        },
+        {
+          "name": "accordion",
+          "description": "Utility class: accordion"
+        },
+        {
+          "name": "accordion-content",
+          "description": "Utility class: accordion-content"
+        },
+        {
+          "name": "accordion-trigger",
+          "description": "Utility class: accordion-trigger"
+        },
+        {
+          "name": "active",
+          "description": "Utility class: active"
+        },
+        {
+          "name": "aspect-square",
+          "description": "Utility class: aspect-square"
+        },
+        {
+          "name": "aspect-video",
+          "description": "Utility class: aspect-video"
+        },
+        {
+          "name": "auto-grid",
+          "description": "Utility class: auto-grid"
+        },
+        {
+          "name": "auto-stack",
+          "description": "Utility class: auto-stack"
+        },
+        {
+          "name": "bg-accent-500",
+          "description": "Utility class: bg-accent-500"
+        },
+        {
+          "name": "bg-accent-600",
+          "description": "Utility class: bg-accent-600"
+        },
+        {
+          "name": "bg-body",
+          "description": "Utility class: bg-body"
+        },
+        {
+          "name": "bg-error",
+          "description": "Utility class: bg-error"
+        },
+        {
+          "name": "bg-info",
+          "description": "Utility class: bg-info"
+        },
+        {
+          "name": "bg-primary-500",
+          "description": "Utility class: bg-primary-500"
+        },
+        {
+          "name": "bg-primary-600",
+          "description": "Utility class: bg-primary-600"
+        },
+        {
+          "name": "bg-primary-700",
+          "description": "Utility class: bg-primary-700"
+        },
+        {
+          "name": "bg-success",
+          "description": "Utility class: bg-success"
+        },
+        {
+          "name": "bg-surface",
+          "description": "Utility class: bg-surface"
+        },
+        {
+          "name": "bg-surface-secondary",
+          "description": "Utility class: bg-surface-secondary"
+        },
+        {
+          "name": "bg-transparent",
+          "description": "Utility class: bg-transparent"
+        },
+        {
+          "name": "bg-warning",
+          "description": "Utility class: bg-warning"
+        },
+        {
+          "name": "block",
+          "description": "Utility class: block"
+        },
+        {
+          "name": "border",
+          "description": "Utility class: border"
+        },
+        {
+          "name": "border-0",
+          "description": "Utility class: border-0"
+        },
+        {
+          "name": "border-2",
+          "description": "Utility class: border-2"
+        },
+        {
+          "name": "border-4",
+          "description": "Utility class: border-4"
+        },
+        {
+          "name": "border-accent",
+          "description": "Utility class: border-accent"
+        },
+        {
+          "name": "border-b",
+          "description": "Utility class: border-b"
+        },
+        {
+          "name": "border-bold",
+          "description": "Utility class: border-bold"
+        },
+        {
+          "name": "border-dashed",
+          "description": "Utility class: border-dashed"
+        },
+        {
+          "name": "border-dotted",
+          "description": "Utility class: border-dotted"
+        },
+        {
+          "name": "border-l",
+          "description": "Utility class: border-l"
+        },
+        {
+          "name": "border-medium",
+          "description": "Utility class: border-medium"
+        },
+        {
+          "name": "border-none",
+          "description": "Utility class: border-none"
+        },
+        {
+          "name": "border-primary",
+          "description": "Utility class: border-primary"
+        },
+        {
+          "name": "border-r",
+          "description": "Utility class: border-r"
+        },
+        {
+          "name": "border-solid",
+          "description": "Utility class: border-solid"
+        },
+        {
+          "name": "border-subtle",
+          "description": "Utility class: border-subtle"
+        },
+        {
+          "name": "border-t",
+          "description": "Utility class: border-t"
+        },
+        {
+          "name": "bottom-0",
+          "description": "Utility class: bottom-0"
+        },
+        {
+          "name": "break-all",
+          "description": "Utility class: break-all"
+        },
+        {
+          "name": "break-words",
+          "description": "Utility class: break-words"
+        },
+        {
+          "name": "btn",
+          "description": "Utility class: btn"
+        },
+        {
+          "name": "btn-block",
+          "description": "Utility class: btn-block"
+        },
+        {
+          "name": "btn-full",
+          "description": "Utility class: btn-full"
+        },
+        {
+          "name": "btn-icon",
+          "description": "Utility class: btn-icon"
+        },
+        {
+          "name": "btn-lg",
+          "description": "Utility class: btn-lg"
+        },
+        {
+          "name": "btn-loading",
+          "description": "Utility class: btn-loading"
+        },
+        {
+          "name": "btn-md",
+          "description": "Utility class: btn-md"
+        },
+        {
+          "name": "btn-outline",
+          "description": "Utility class: btn-outline"
+        },
+        {
+          "name": "btn-primary",
+          "description": "Utility class: btn-primary"
+        },
+        {
+          "name": "btn-sm",
+          "description": "Utility class: btn-sm"
+        },
+        {
+          "name": "btn-xl",
+          "description": "Utility class: btn-xl"
+        },
+        {
+          "name": "btn-xs",
+          "description": "Utility class: btn-xs"
+        },
+        {
+          "name": "capitalize",
+          "description": "Utility class: capitalize"
+        },
+        {
+          "name": "card",
+          "description": "Utility class: card"
+        },
+        {
+          "name": "card-lg",
+          "description": "Utility class: card-lg"
+        },
+        {
+          "name": "col-span-2",
+          "description": "Utility class: col-span-2"
+        },
+        {
+          "name": "col-span-3",
+          "description": "Utility class: col-span-3"
+        },
+        {
+          "name": "col-span-4",
+          "description": "Utility class: col-span-4"
+        },
+        {
+          "name": "col-span-full",
+          "description": "Utility class: col-span-full"
+        },
+        {
+          "name": "container",
+          "description": "Utility class: container"
+        },
+        {
+          "name": "cursor-auto",
+          "description": "Utility class: cursor-auto"
+        },
+        {
+          "name": "cursor-not-allowed",
+          "description": "Utility class: cursor-not-allowed"
+        },
+        {
+          "name": "cursor-pointer",
+          "description": "Utility class: cursor-pointer"
+        },
+        {
+          "name": "cursor-text",
+          "description": "Utility class: cursor-text"
+        },
+        {
+          "name": "cursor-wait",
+          "description": "Utility class: cursor-wait"
+        },
+        {
+          "name": "duration-100",
+          "description": "Utility class: duration-100"
+        },
+        {
+          "name": "duration-150",
+          "description": "Utility class: duration-150"
+        },
+        {
+          "name": "duration-200",
+          "description": "Utility class: duration-200"
+        },
+        {
+          "name": "duration-300",
+          "description": "Utility class: duration-300"
+        },
+        {
+          "name": "duration-500",
+          "description": "Utility class: duration-500"
+        },
+        {
+          "name": "duration-75",
+          "description": "Utility class: duration-75"
+        },
+        {
+          "name": "ease-in",
+          "description": "Utility class: ease-in"
+        },
+        {
+          "name": "ease-in-out",
+          "description": "Utility class: ease-in-out"
+        },
+        {
+          "name": "ease-linear",
+          "description": "Utility class: ease-linear"
+        },
+        {
+          "name": "ease-out",
+          "description": "Utility class: ease-out"
+        },
+        {
+          "name": "fixed",
+          "description": "Utility class: fixed"
+        },
+        {
+          "name": "flex",
+          "description": "Utility class: flex"
+        },
+        {
+          "name": "flex-1",
+          "description": "Utility class: flex-1"
+        },
+        {
+          "name": "flex-auto",
+          "description": "Utility class: flex-auto"
+        },
+        {
+          "name": "flex-col",
+          "description": "Utility class: flex-col"
+        },
+        {
+          "name": "flex-col-reverse",
+          "description": "Utility class: flex-col-reverse"
+        },
+        {
+          "name": "flex-grow",
+          "description": "Utility class: flex-grow"
+        },
+        {
+          "name": "flex-grow-0",
+          "description": "Utility class: flex-grow-0"
+        },
+        {
+          "name": "flex-initial",
+          "description": "Utility class: flex-initial"
+        },
+        {
+          "name": "flex-none",
+          "description": "Utility class: flex-none"
+        },
+        {
+          "name": "flex-nowrap",
+          "description": "Utility class: flex-nowrap"
+        },
+        {
+          "name": "flex-row",
+          "description": "Utility class: flex-row"
+        },
+        {
+          "name": "flex-row-reverse",
+          "description": "Utility class: flex-row-reverse"
+        },
+        {
+          "name": "flex-shrink",
+          "description": "Utility class: flex-shrink"
+        },
+        {
+          "name": "flex-shrink-0",
+          "description": "Utility class: flex-shrink-0"
+        },
+        {
+          "name": "flex-wrap",
+          "description": "Utility class: flex-wrap"
+        },
+        {
+          "name": "flex-wrap-reverse",
+          "description": "Utility class: flex-wrap-reverse"
+        },
+        {
+          "name": "font-accent",
+          "description": "Utility class: font-accent"
+        },
+        {
+          "name": "font-bold",
+          "description": "Utility class: font-bold"
+        },
+        {
+          "name": "font-extrabold",
+          "description": "Utility class: font-extrabold"
+        },
+        {
+          "name": "font-light",
+          "description": "Utility class: font-light"
+        },
+        {
+          "name": "font-medium",
+          "description": "Utility class: font-medium"
+        },
+        {
+          "name": "font-mono",
+          "description": "Utility class: font-mono"
+        },
+        {
+          "name": "font-normal",
+          "description": "Utility class: font-normal"
+        },
+        {
+          "name": "font-primary",
+          "description": "Utility class: font-primary"
+        },
+        {
+          "name": "font-semibold",
+          "description": "Utility class: font-semibold"
+        },
+        {
+          "name": "form-control",
+          "description": "Utility class: form-control"
+        },
+        {
+          "name": "gap-0",
+          "description": "Utility class: gap-0"
+        },
+        {
+          "name": "gap-1",
+          "description": "Utility class: gap-1"
+        },
+        {
+          "name": "gap-10",
+          "description": "Utility class: gap-10"
+        },
+        {
+          "name": "gap-12",
+          "description": "Utility class: gap-12"
+        },
+        {
+          "name": "gap-16",
+          "description": "Utility class: gap-16"
+        },
+        {
+          "name": "gap-2",
+          "description": "Utility class: gap-2"
+        },
+        {
+          "name": "gap-20",
+          "description": "Utility class: gap-20"
+        },
+        {
+          "name": "gap-24",
+          "description": "Utility class: gap-24"
+        },
+        {
+          "name": "gap-3",
+          "description": "Utility class: gap-3"
+        },
+        {
+          "name": "gap-4",
+          "description": "Utility class: gap-4"
+        },
+        {
+          "name": "gap-5",
+          "description": "Utility class: gap-5"
+        },
+        {
+          "name": "gap-6",
+          "description": "Utility class: gap-6"
+        },
+        {
+          "name": "gap-8",
+          "description": "Utility class: gap-8"
+        },
+        {
+          "name": "gap-x-0",
+          "description": "Utility class: gap-x-0"
+        },
+        {
+          "name": "gap-x-1",
+          "description": "Utility class: gap-x-1"
+        },
+        {
+          "name": "gap-x-10",
+          "description": "Utility class: gap-x-10"
+        },
+        {
+          "name": "gap-x-12",
+          "description": "Utility class: gap-x-12"
+        },
+        {
+          "name": "gap-x-2",
+          "description": "Utility class: gap-x-2"
+        },
+        {
+          "name": "gap-x-3",
+          "description": "Utility class: gap-x-3"
+        },
+        {
+          "name": "gap-x-4",
+          "description": "Utility class: gap-x-4"
+        },
+        {
+          "name": "gap-x-5",
+          "description": "Utility class: gap-x-5"
+        },
+        {
+          "name": "gap-x-6",
+          "description": "Utility class: gap-x-6"
+        },
+        {
+          "name": "gap-x-8",
+          "description": "Utility class: gap-x-8"
+        },
+        {
+          "name": "gap-y-0",
+          "description": "Utility class: gap-y-0"
+        },
+        {
+          "name": "gap-y-1",
+          "description": "Utility class: gap-y-1"
+        },
+        {
+          "name": "gap-y-10",
+          "description": "Utility class: gap-y-10"
+        },
+        {
+          "name": "gap-y-12",
+          "description": "Utility class: gap-y-12"
+        },
+        {
+          "name": "gap-y-2",
+          "description": "Utility class: gap-y-2"
+        },
+        {
+          "name": "gap-y-3",
+          "description": "Utility class: gap-y-3"
+        },
+        {
+          "name": "gap-y-4",
+          "description": "Utility class: gap-y-4"
+        },
+        {
+          "name": "gap-y-5",
+          "description": "Utility class: gap-y-5"
+        },
+        {
+          "name": "gap-y-6",
+          "description": "Utility class: gap-y-6"
+        },
+        {
+          "name": "gap-y-8",
+          "description": "Utility class: gap-y-8"
+        },
+        {
+          "name": "glass",
+          "description": "Utility class: glass"
+        },
+        {
+          "name": "grid",
+          "description": "Utility class: grid"
+        },
+        {
+          "name": "grid-cols-1",
+          "description": "Utility class: grid-cols-1"
+        },
+        {
+          "name": "grid-cols-12",
+          "description": "Utility class: grid-cols-12"
+        },
+        {
+          "name": "grid-cols-2",
+          "description": "Utility class: grid-cols-2"
+        },
+        {
+          "name": "grid-cols-3",
+          "description": "Utility class: grid-cols-3"
+        },
+        {
+          "name": "grid-cols-4",
+          "description": "Utility class: grid-cols-4"
+        },
+        {
+          "name": "grid-cols-5",
+          "description": "Utility class: grid-cols-5"
+        },
+        {
+          "name": "grid-cols-6",
+          "description": "Utility class: grid-cols-6"
+        },
+        {
+          "name": "grid-rows-1",
+          "description": "Utility class: grid-rows-1"
+        },
+        {
+          "name": "grid-rows-2",
+          "description": "Utility class: grid-rows-2"
+        },
+        {
+          "name": "grid-rows-3",
+          "description": "Utility class: grid-rows-3"
+        },
+        {
+          "name": "grid-rows-4",
+          "description": "Utility class: grid-rows-4"
+        },
+        {
+          "name": "grid-rows-6",
+          "description": "Utility class: grid-rows-6"
+        },
+        {
+          "name": "h-auto",
+          "description": "Utility class: h-auto"
+        },
+        {
+          "name": "h-fit",
+          "description": "Utility class: h-fit"
+        },
+        {
+          "name": "h-full",
+          "description": "Utility class: h-full"
+        },
+        {
+          "name": "h-max",
+          "description": "Utility class: h-max"
+        },
+        {
+          "name": "h-min",
+          "description": "Utility class: h-min"
+        },
+        {
+          "name": "h-screen",
+          "description": "Utility class: h-screen"
+        },
+        {
+          "name": "hamburger",
+          "description": "Utility class: hamburger"
+        },
+        {
+          "name": "hidden",
+          "description": "Utility class: hidden"
+        },
+        {
+          "name": "icon",
+          "description": "Utility class: icon"
+        },
+        {
+          "name": "icon-2xl",
+          "description": "Utility class: icon-2xl"
+        },
+        {
+          "name": "icon-3xl",
+          "description": "Utility class: icon-3xl"
+        },
+        {
+          "name": "icon-accent",
+          "description": "Utility class: icon-accent"
+        },
+        {
+          "name": "icon-error",
+          "description": "Utility class: icon-error"
+        },
+        {
+          "name": "icon-fill",
+          "description": "Utility class: icon-fill"
+        },
+        {
+          "name": "icon-fill-primary",
+          "description": "Utility class: icon-fill-primary"
+        },
+        {
+          "name": "icon-info",
+          "description": "Utility class: icon-info"
+        },
+        {
+          "name": "icon-lg",
+          "description": "Utility class: icon-lg"
+        },
+        {
+          "name": "icon-md",
+          "description": "Utility class: icon-md"
+        },
+        {
+          "name": "icon-primary",
+          "description": "Utility class: icon-primary"
+        },
+        {
+          "name": "icon-sm",
+          "description": "Utility class: icon-sm"
+        },
+        {
+          "name": "icon-success",
+          "description": "Utility class: icon-success"
+        },
+        {
+          "name": "icon-warning",
+          "description": "Utility class: icon-warning"
+        },
+        {
+          "name": "icon-xl",
+          "description": "Utility class: icon-xl"
+        },
+        {
+          "name": "icon-xs",
+          "description": "Utility class: icon-xs"
+        },
+        {
+          "name": "inline",
+          "description": "Utility class: inline"
+        },
+        {
+          "name": "inline-block",
+          "description": "Utility class: inline-block"
+        },
+        {
+          "name": "inline-flex",
+          "description": "Utility class: inline-flex"
+        },
+        {
+          "name": "inline-grid",
+          "description": "Utility class: inline-grid"
+        },
+        {
+          "name": "inset-0",
+          "description": "Utility class: inset-0"
+        },
+        {
+          "name": "inset-x-0",
+          "description": "Utility class: inset-x-0"
+        },
+        {
+          "name": "inset-y-0",
+          "description": "Utility class: inset-y-0"
+        },
+        {
+          "name": "invisible",
+          "description": "Utility class: invisible"
+        },
+        {
+          "name": "italic",
+          "description": "Utility class: italic"
+        },
+        {
+          "name": "items-baseline",
+          "description": "Utility class: items-baseline"
+        },
+        {
+          "name": "items-center",
+          "description": "Utility class: items-center"
+        },
+        {
+          "name": "items-end",
+          "description": "Utility class: items-end"
+        },
+        {
+          "name": "items-start",
+          "description": "Utility class: items-start"
+        },
+        {
+          "name": "items-stretch",
+          "description": "Utility class: items-stretch"
+        },
+        {
+          "name": "js",
+          "description": "Utility class: js"
+        },
+        {
+          "name": "justify-around",
+          "description": "Utility class: justify-around"
+        },
+        {
+          "name": "justify-between",
+          "description": "Utility class: justify-between"
+        },
+        {
+          "name": "justify-center",
+          "description": "Utility class: justify-center"
+        },
+        {
+          "name": "justify-end",
+          "description": "Utility class: justify-end"
+        },
+        {
+          "name": "justify-evenly",
+          "description": "Utility class: justify-evenly"
+        },
+        {
+          "name": "justify-start",
+          "description": "Utility class: justify-start"
+        },
+        {
+          "name": "leading-loose",
+          "description": "Utility class: leading-loose"
+        },
+        {
+          "name": "leading-none",
+          "description": "Utility class: leading-none"
+        },
+        {
+          "name": "leading-normal",
+          "description": "Utility class: leading-normal"
+        },
+        {
+          "name": "leading-tight",
+          "description": "Utility class: leading-tight"
+        },
+        {
+          "name": "left-0",
+          "description": "Utility class: left-0"
+        },
+        {
+          "name": "line-through",
+          "description": "Utility class: line-through"
+        },
+        {
+          "name": "list-decimal",
+          "description": "Utility class: list-decimal"
+        },
+        {
+          "name": "list-disc",
+          "description": "Utility class: list-disc"
+        },
+        {
+          "name": "list-none",
+          "description": "Utility class: list-none"
+        },
+        {
+          "name": "loading",
+          "description": "Utility class: loading"
+        },
+        {
+          "name": "lowercase",
+          "description": "Utility class: lowercase"
+        },
+        {
+          "name": "m-0",
+          "description": "Utility class: m-0"
+        },
+        {
+          "name": "m-1",
+          "description": "Utility class: m-1"
+        },
+        {
+          "name": "m-10",
+          "description": "Utility class: m-10"
+        },
+        {
+          "name": "m-12",
+          "description": "Utility class: m-12"
+        },
+        {
+          "name": "m-16",
+          "description": "Utility class: m-16"
+        },
+        {
+          "name": "m-2",
+          "description": "Utility class: m-2"
+        },
+        {
+          "name": "m-20",
+          "description": "Utility class: m-20"
+        },
+        {
+          "name": "m-24",
+          "description": "Utility class: m-24"
+        },
+        {
+          "name": "m-3",
+          "description": "Utility class: m-3"
+        },
+        {
+          "name": "m-4",
+          "description": "Utility class: m-4"
+        },
+        {
+          "name": "m-5",
+          "description": "Utility class: m-5"
+        },
+        {
+          "name": "m-6",
+          "description": "Utility class: m-6"
+        },
+        {
+          "name": "m-8",
+          "description": "Utility class: m-8"
+        },
+        {
+          "name": "m-auto",
+          "description": "Utility class: m-auto"
+        },
+        {
+          "name": "max-h-full",
+          "description": "Utility class: max-h-full"
+        },
+        {
+          "name": "max-h-screen",
+          "description": "Utility class: max-h-screen"
+        },
+        {
+          "name": "max-w-2xl",
+          "description": "Utility class: max-w-2xl"
+        },
+        {
+          "name": "max-w-3xl",
+          "description": "Utility class: max-w-3xl"
+        },
+        {
+          "name": "max-w-4xl",
+          "description": "Utility class: max-w-4xl"
+        },
+        {
+          "name": "max-w-5xl",
+          "description": "Utility class: max-w-5xl"
+        },
+        {
+          "name": "max-w-6xl",
+          "description": "Utility class: max-w-6xl"
+        },
+        {
+          "name": "max-w-full",
+          "description": "Utility class: max-w-full"
+        },
+        {
+          "name": "max-w-lg",
+          "description": "Utility class: max-w-lg"
+        },
+        {
+          "name": "max-w-md",
+          "description": "Utility class: max-w-md"
+        },
+        {
+          "name": "max-w-sm",
+          "description": "Utility class: max-w-sm"
+        },
+        {
+          "name": "max-w-xl",
+          "description": "Utility class: max-w-xl"
+        },
+        {
+          "name": "max-w-xs",
+          "description": "Utility class: max-w-xs"
+        },
+        {
+          "name": "mb-0",
+          "description": "Utility class: mb-0"
+        },
+        {
+          "name": "mb-1",
+          "description": "Utility class: mb-1"
+        },
+        {
+          "name": "mb-10",
+          "description": "Utility class: mb-10"
+        },
+        {
+          "name": "mb-12",
+          "description": "Utility class: mb-12"
+        },
+        {
+          "name": "mb-16",
+          "description": "Utility class: mb-16"
+        },
+        {
+          "name": "mb-2",
+          "description": "Utility class: mb-2"
+        },
+        {
+          "name": "mb-20",
+          "description": "Utility class: mb-20"
+        },
+        {
+          "name": "mb-24",
+          "description": "Utility class: mb-24"
+        },
+        {
+          "name": "mb-3",
+          "description": "Utility class: mb-3"
+        },
+        {
+          "name": "mb-4",
+          "description": "Utility class: mb-4"
+        },
+        {
+          "name": "mb-5",
+          "description": "Utility class: mb-5"
+        },
+        {
+          "name": "mb-6",
+          "description": "Utility class: mb-6"
+        },
+        {
+          "name": "mb-8",
+          "description": "Utility class: mb-8"
+        },
+        {
+          "name": "mb-auto",
+          "description": "Utility class: mb-auto"
+        },
+        {
+          "name": "menu-open",
+          "description": "Utility class: menu-open"
+        },
+        {
+          "name": "min-h-0",
+          "description": "Utility class: min-h-0"
+        },
+        {
+          "name": "min-h-full",
+          "description": "Utility class: min-h-full"
+        },
+        {
+          "name": "min-h-screen",
+          "description": "Utility class: min-h-screen"
+        },
+        {
+          "name": "min-w-0",
+          "description": "Utility class: min-w-0"
+        },
+        {
+          "name": "min-w-full",
+          "description": "Utility class: min-w-full"
+        },
+        {
+          "name": "ml-0",
+          "description": "Utility class: ml-0"
+        },
+        {
+          "name": "ml-1",
+          "description": "Utility class: ml-1"
+        },
+        {
+          "name": "ml-10",
+          "description": "Utility class: ml-10"
+        },
+        {
+          "name": "ml-12",
+          "description": "Utility class: ml-12"
+        },
+        {
+          "name": "ml-16",
+          "description": "Utility class: ml-16"
+        },
+        {
+          "name": "ml-2",
+          "description": "Utility class: ml-2"
+        },
+        {
+          "name": "ml-20",
+          "description": "Utility class: ml-20"
+        },
+        {
+          "name": "ml-24",
+          "description": "Utility class: ml-24"
+        },
+        {
+          "name": "ml-3",
+          "description": "Utility class: ml-3"
+        },
+        {
+          "name": "ml-4",
+          "description": "Utility class: ml-4"
+        },
+        {
+          "name": "ml-5",
+          "description": "Utility class: ml-5"
+        },
+        {
+          "name": "ml-6",
+          "description": "Utility class: ml-6"
+        },
+        {
+          "name": "ml-8",
+          "description": "Utility class: ml-8"
+        },
+        {
+          "name": "ml-auto",
+          "description": "Utility class: ml-auto"
+        },
+        {
+          "name": "mobile-menu",
+          "description": "Utility class: mobile-menu"
+        },
+        {
+          "name": "mr-0",
+          "description": "Utility class: mr-0"
+        },
+        {
+          "name": "mr-1",
+          "description": "Utility class: mr-1"
+        },
+        {
+          "name": "mr-10",
+          "description": "Utility class: mr-10"
+        },
+        {
+          "name": "mr-12",
+          "description": "Utility class: mr-12"
+        },
+        {
+          "name": "mr-16",
+          "description": "Utility class: mr-16"
+        },
+        {
+          "name": "mr-2",
+          "description": "Utility class: mr-2"
+        },
+        {
+          "name": "mr-20",
+          "description": "Utility class: mr-20"
+        },
+        {
+          "name": "mr-24",
+          "description": "Utility class: mr-24"
+        },
+        {
+          "name": "mr-3",
+          "description": "Utility class: mr-3"
+        },
+        {
+          "name": "mr-4",
+          "description": "Utility class: mr-4"
+        },
+        {
+          "name": "mr-5",
+          "description": "Utility class: mr-5"
+        },
+        {
+          "name": "mr-6",
+          "description": "Utility class: mr-6"
+        },
+        {
+          "name": "mr-8",
+          "description": "Utility class: mr-8"
+        },
+        {
+          "name": "mr-auto",
+          "description": "Utility class: mr-auto"
+        },
+        {
+          "name": "mt-0",
+          "description": "Utility class: mt-0"
+        },
+        {
+          "name": "mt-1",
+          "description": "Utility class: mt-1"
+        },
+        {
+          "name": "mt-10",
+          "description": "Utility class: mt-10"
+        },
+        {
+          "name": "mt-12",
+          "description": "Utility class: mt-12"
+        },
+        {
+          "name": "mt-16",
+          "description": "Utility class: mt-16"
+        },
+        {
+          "name": "mt-2",
+          "description": "Utility class: mt-2"
+        },
+        {
+          "name": "mt-20",
+          "description": "Utility class: mt-20"
+        },
+        {
+          "name": "mt-24",
+          "description": "Utility class: mt-24"
+        },
+        {
+          "name": "mt-3",
+          "description": "Utility class: mt-3"
+        },
+        {
+          "name": "mt-4",
+          "description": "Utility class: mt-4"
+        },
+        {
+          "name": "mt-5",
+          "description": "Utility class: mt-5"
+        },
+        {
+          "name": "mt-6",
+          "description": "Utility class: mt-6"
+        },
+        {
+          "name": "mt-8",
+          "description": "Utility class: mt-8"
+        },
+        {
+          "name": "mt-auto",
+          "description": "Utility class: mt-auto"
+        },
+        {
+          "name": "mx-0",
+          "description": "Utility class: mx-0"
+        },
+        {
+          "name": "mx-1",
+          "description": "Utility class: mx-1"
+        },
+        {
+          "name": "mx-10",
+          "description": "Utility class: mx-10"
+        },
+        {
+          "name": "mx-12",
+          "description": "Utility class: mx-12"
+        },
+        {
+          "name": "mx-16",
+          "description": "Utility class: mx-16"
+        },
+        {
+          "name": "mx-2",
+          "description": "Utility class: mx-2"
+        },
+        {
+          "name": "mx-20",
+          "description": "Utility class: mx-20"
+        },
+        {
+          "name": "mx-24",
+          "description": "Utility class: mx-24"
+        },
+        {
+          "name": "mx-3",
+          "description": "Utility class: mx-3"
+        },
+        {
+          "name": "mx-4",
+          "description": "Utility class: mx-4"
+        },
+        {
+          "name": "mx-5",
+          "description": "Utility class: mx-5"
+        },
+        {
+          "name": "mx-6",
+          "description": "Utility class: mx-6"
+        },
+        {
+          "name": "mx-8",
+          "description": "Utility class: mx-8"
+        },
+        {
+          "name": "mx-auto",
+          "description": "Utility class: mx-auto"
+        },
+        {
+          "name": "my-0",
+          "description": "Utility class: my-0"
+        },
+        {
+          "name": "my-1",
+          "description": "Utility class: my-1"
+        },
+        {
+          "name": "my-10",
+          "description": "Utility class: my-10"
+        },
+        {
+          "name": "my-12",
+          "description": "Utility class: my-12"
+        },
+        {
+          "name": "my-16",
+          "description": "Utility class: my-16"
+        },
+        {
+          "name": "my-2",
+          "description": "Utility class: my-2"
+        },
+        {
+          "name": "my-20",
+          "description": "Utility class: my-20"
+        },
+        {
+          "name": "my-24",
+          "description": "Utility class: my-24"
+        },
+        {
+          "name": "my-3",
+          "description": "Utility class: my-3"
+        },
+        {
+          "name": "my-4",
+          "description": "Utility class: my-4"
+        },
+        {
+          "name": "my-5",
+          "description": "Utility class: my-5"
+        },
+        {
+          "name": "my-6",
+          "description": "Utility class: my-6"
+        },
+        {
+          "name": "my-8",
+          "description": "Utility class: my-8"
+        },
+        {
+          "name": "my-auto",
+          "description": "Utility class: my-auto"
+        },
+        {
+          "name": "no-underline",
+          "description": "Utility class: no-underline"
+        },
+        {
+          "name": "not-italic",
+          "description": "Utility class: not-italic"
+        },
+        {
+          "name": "object-contain",
+          "description": "Utility class: object-contain"
+        },
+        {
+          "name": "object-cover",
+          "description": "Utility class: object-cover"
+        },
+        {
+          "name": "object-fill",
+          "description": "Utility class: object-fill"
+        },
+        {
+          "name": "opacity-0",
+          "description": "Utility class: opacity-0"
+        },
+        {
+          "name": "opacity-100",
+          "description": "Utility class: opacity-100"
+        },
+        {
+          "name": "opacity-25",
+          "description": "Utility class: opacity-25"
+        },
+        {
+          "name": "opacity-50",
+          "description": "Utility class: opacity-50"
+        },
+        {
+          "name": "opacity-75",
+          "description": "Utility class: opacity-75"
+        },
+        {
+          "name": "overflow-auto",
+          "description": "Utility class: overflow-auto"
+        },
+        {
+          "name": "overflow-hidden",
+          "description": "Utility class: overflow-hidden"
+        },
+        {
+          "name": "overflow-scroll",
+          "description": "Utility class: overflow-scroll"
+        },
+        {
+          "name": "overflow-visible",
+          "description": "Utility class: overflow-visible"
+        },
+        {
+          "name": "overflow-x-auto",
+          "description": "Utility class: overflow-x-auto"
+        },
+        {
+          "name": "overflow-x-hidden",
+          "description": "Utility class: overflow-x-hidden"
+        },
+        {
+          "name": "overflow-y-auto",
+          "description": "Utility class: overflow-y-auto"
+        },
+        {
+          "name": "overflow-y-hidden",
+          "description": "Utility class: overflow-y-hidden"
+        },
+        {
+          "name": "p-0",
+          "description": "Utility class: p-0"
+        },
+        {
+          "name": "p-1",
+          "description": "Utility class: p-1"
+        },
+        {
+          "name": "p-10",
+          "description": "Utility class: p-10"
+        },
+        {
+          "name": "p-12",
+          "description": "Utility class: p-12"
+        },
+        {
+          "name": "p-16",
+          "description": "Utility class: p-16"
+        },
+        {
+          "name": "p-2",
+          "description": "Utility class: p-2"
+        },
+        {
+          "name": "p-20",
+          "description": "Utility class: p-20"
+        },
+        {
+          "name": "p-24",
+          "description": "Utility class: p-24"
+        },
+        {
+          "name": "p-3",
+          "description": "Utility class: p-3"
+        },
+        {
+          "name": "p-4",
+          "description": "Utility class: p-4"
+        },
+        {
+          "name": "p-5",
+          "description": "Utility class: p-5"
+        },
+        {
+          "name": "p-6",
+          "description": "Utility class: p-6"
+        },
+        {
+          "name": "p-8",
+          "description": "Utility class: p-8"
+        },
+        {
+          "name": "pb-0",
+          "description": "Utility class: pb-0"
+        },
+        {
+          "name": "pb-1",
+          "description": "Utility class: pb-1"
+        },
+        {
+          "name": "pb-10",
+          "description": "Utility class: pb-10"
+        },
+        {
+          "name": "pb-12",
+          "description": "Utility class: pb-12"
+        },
+        {
+          "name": "pb-16",
+          "description": "Utility class: pb-16"
+        },
+        {
+          "name": "pb-2",
+          "description": "Utility class: pb-2"
+        },
+        {
+          "name": "pb-20",
+          "description": "Utility class: pb-20"
+        },
+        {
+          "name": "pb-24",
+          "description": "Utility class: pb-24"
+        },
+        {
+          "name": "pb-3",
+          "description": "Utility class: pb-3"
+        },
+        {
+          "name": "pb-4",
+          "description": "Utility class: pb-4"
+        },
+        {
+          "name": "pb-5",
+          "description": "Utility class: pb-5"
+        },
+        {
+          "name": "pb-6",
+          "description": "Utility class: pb-6"
+        },
+        {
+          "name": "pb-8",
+          "description": "Utility class: pb-8"
+        },
+        {
+          "name": "pl-0",
+          "description": "Utility class: pl-0"
+        },
+        {
+          "name": "pl-1",
+          "description": "Utility class: pl-1"
+        },
+        {
+          "name": "pl-10",
+          "description": "Utility class: pl-10"
+        },
+        {
+          "name": "pl-12",
+          "description": "Utility class: pl-12"
+        },
+        {
+          "name": "pl-16",
+          "description": "Utility class: pl-16"
+        },
+        {
+          "name": "pl-2",
+          "description": "Utility class: pl-2"
+        },
+        {
+          "name": "pl-20",
+          "description": "Utility class: pl-20"
+        },
+        {
+          "name": "pl-24",
+          "description": "Utility class: pl-24"
+        },
+        {
+          "name": "pl-3",
+          "description": "Utility class: pl-3"
+        },
+        {
+          "name": "pl-4",
+          "description": "Utility class: pl-4"
+        },
+        {
+          "name": "pl-5",
+          "description": "Utility class: pl-5"
+        },
+        {
+          "name": "pl-6",
+          "description": "Utility class: pl-6"
+        },
+        {
+          "name": "pl-8",
+          "description": "Utility class: pl-8"
+        },
+        {
+          "name": "pointer-events-auto",
+          "description": "Utility class: pointer-events-auto"
+        },
+        {
+          "name": "pointer-events-none",
+          "description": "Utility class: pointer-events-none"
+        },
+        {
+          "name": "pr-0",
+          "description": "Utility class: pr-0"
+        },
+        {
+          "name": "pr-1",
+          "description": "Utility class: pr-1"
+        },
+        {
+          "name": "pr-10",
+          "description": "Utility class: pr-10"
+        },
+        {
+          "name": "pr-12",
+          "description": "Utility class: pr-12"
+        },
+        {
+          "name": "pr-16",
+          "description": "Utility class: pr-16"
+        },
+        {
+          "name": "pr-2",
+          "description": "Utility class: pr-2"
+        },
+        {
+          "name": "pr-20",
+          "description": "Utility class: pr-20"
+        },
+        {
+          "name": "pr-24",
+          "description": "Utility class: pr-24"
+        },
+        {
+          "name": "pr-3",
+          "description": "Utility class: pr-3"
+        },
+        {
+          "name": "pr-4",
+          "description": "Utility class: pr-4"
+        },
+        {
+          "name": "pr-5",
+          "description": "Utility class: pr-5"
+        },
+        {
+          "name": "pr-6",
+          "description": "Utility class: pr-6"
+        },
+        {
+          "name": "pr-8",
+          "description": "Utility class: pr-8"
+        },
+        {
+          "name": "pt-0",
+          "description": "Utility class: pt-0"
+        },
+        {
+          "name": "pt-1",
+          "description": "Utility class: pt-1"
+        },
+        {
+          "name": "pt-10",
+          "description": "Utility class: pt-10"
+        },
+        {
+          "name": "pt-12",
+          "description": "Utility class: pt-12"
+        },
+        {
+          "name": "pt-16",
+          "description": "Utility class: pt-16"
+        },
+        {
+          "name": "pt-2",
+          "description": "Utility class: pt-2"
+        },
+        {
+          "name": "pt-20",
+          "description": "Utility class: pt-20"
+        },
+        {
+          "name": "pt-24",
+          "description": "Utility class: pt-24"
+        },
+        {
+          "name": "pt-3",
+          "description": "Utility class: pt-3"
+        },
+        {
+          "name": "pt-4",
+          "description": "Utility class: pt-4"
+        },
+        {
+          "name": "pt-5",
+          "description": "Utility class: pt-5"
+        },
+        {
+          "name": "pt-6",
+          "description": "Utility class: pt-6"
+        },
+        {
+          "name": "pt-8",
+          "description": "Utility class: pt-8"
+        },
+        {
+          "name": "px-0",
+          "description": "Utility class: px-0"
+        },
+        {
+          "name": "px-1",
+          "description": "Utility class: px-1"
+        },
+        {
+          "name": "px-10",
+          "description": "Utility class: px-10"
+        },
+        {
+          "name": "px-12",
+          "description": "Utility class: px-12"
+        },
+        {
+          "name": "px-16",
+          "description": "Utility class: px-16"
+        },
+        {
+          "name": "px-2",
+          "description": "Utility class: px-2"
+        },
+        {
+          "name": "px-20",
+          "description": "Utility class: px-20"
+        },
+        {
+          "name": "px-24",
+          "description": "Utility class: px-24"
+        },
+        {
+          "name": "px-3",
+          "description": "Utility class: px-3"
+        },
+        {
+          "name": "px-4",
+          "description": "Utility class: px-4"
+        },
+        {
+          "name": "px-5",
+          "description": "Utility class: px-5"
+        },
+        {
+          "name": "px-6",
+          "description": "Utility class: px-6"
+        },
+        {
+          "name": "px-8",
+          "description": "Utility class: px-8"
+        },
+        {
+          "name": "py-0",
+          "description": "Utility class: py-0"
+        },
+        {
+          "name": "py-1",
+          "description": "Utility class: py-1"
+        },
+        {
+          "name": "py-10",
+          "description": "Utility class: py-10"
+        },
+        {
+          "name": "py-12",
+          "description": "Utility class: py-12"
+        },
+        {
+          "name": "py-16",
+          "description": "Utility class: py-16"
+        },
+        {
+          "name": "py-2",
+          "description": "Utility class: py-2"
+        },
+        {
+          "name": "py-20",
+          "description": "Utility class: py-20"
+        },
+        {
+          "name": "py-24",
+          "description": "Utility class: py-24"
+        },
+        {
+          "name": "py-3",
+          "description": "Utility class: py-3"
+        },
+        {
+          "name": "py-4",
+          "description": "Utility class: py-4"
+        },
+        {
+          "name": "py-5",
+          "description": "Utility class: py-5"
+        },
+        {
+          "name": "py-6",
+          "description": "Utility class: py-6"
+        },
+        {
+          "name": "py-8",
+          "description": "Utility class: py-8"
+        },
+        {
+          "name": "relative",
+          "description": "Utility class: relative"
+        },
+        {
+          "name": "right-0",
+          "description": "Utility class: right-0"
+        },
+        {
+          "name": "rounded",
+          "description": "Utility class: rounded"
+        },
+        {
+          "name": "rounded-2xl",
+          "description": "Utility class: rounded-2xl"
+        },
+        {
+          "name": "rounded-full",
+          "description": "Utility class: rounded-full"
+        },
+        {
+          "name": "rounded-lg",
+          "description": "Utility class: rounded-lg"
+        },
+        {
+          "name": "rounded-md",
+          "description": "Utility class: rounded-md"
+        },
+        {
+          "name": "rounded-none",
+          "description": "Utility class: rounded-none"
+        },
+        {
+          "name": "rounded-sm",
+          "description": "Utility class: rounded-sm"
+        },
+        {
+          "name": "rounded-xl",
+          "description": "Utility class: rounded-xl"
+        },
+        {
+          "name": "select-all",
+          "description": "Utility class: select-all"
+        },
+        {
+          "name": "select-none",
+          "description": "Utility class: select-none"
+        },
+        {
+          "name": "select-text",
+          "description": "Utility class: select-text"
+        },
+        {
+          "name": "self-center",
+          "description": "Utility class: self-center"
+        },
+        {
+          "name": "self-end",
+          "description": "Utility class: self-end"
+        },
+        {
+          "name": "self-start",
+          "description": "Utility class: self-start"
+        },
+        {
+          "name": "self-stretch",
+          "description": "Utility class: self-stretch"
+        },
+        {
+          "name": "shadow",
+          "description": "Utility class: shadow"
+        },
+        {
+          "name": "shadow-2xl",
+          "description": "Utility class: shadow-2xl"
+        },
+        {
+          "name": "shadow-inner",
+          "description": "Utility class: shadow-inner"
+        },
+        {
+          "name": "shadow-lg",
+          "description": "Utility class: shadow-lg"
+        },
+        {
+          "name": "shadow-md",
+          "description": "Utility class: shadow-md"
+        },
+        {
+          "name": "shadow-none",
+          "description": "Utility class: shadow-none"
+        },
+        {
+          "name": "shadow-sm",
+          "description": "Utility class: shadow-sm"
+        },
+        {
+          "name": "shadow-xl",
+          "description": "Utility class: shadow-xl"
+        },
+        {
+          "name": "skeleton",
+          "description": "Utility class: skeleton"
+        },
+        {
+          "name": "space-x-2",
+          "description": "Utility class: space-x-2"
+        },
+        {
+          "name": "space-x-4",
+          "description": "Utility class: space-x-4"
+        },
+        {
+          "name": "space-x-6",
+          "description": "Utility class: space-x-6"
+        },
+        {
+          "name": "space-y-2",
+          "description": "Utility class: space-y-2"
+        },
+        {
+          "name": "space-y-4",
+          "description": "Utility class: space-y-4"
+        },
+        {
+          "name": "space-y-6",
+          "description": "Utility class: space-y-6"
+        },
+        {
+          "name": "sr-only",
+          "description": "Utility class: sr-only"
+        },
+        {
+          "name": "static",
+          "description": "Utility class: static"
+        },
+        {
+          "name": "sticky",
+          "description": "Utility class: sticky"
+        },
+        {
+          "name": "text-2xl",
+          "description": "Utility class: text-2xl"
+        },
+        {
+          "name": "text-3xl",
+          "description": "Utility class: text-3xl"
+        },
+        {
+          "name": "text-4xl",
+          "description": "Utility class: text-4xl"
+        },
+        {
+          "name": "text-5xl",
+          "description": "Utility class: text-5xl"
+        },
+        {
+          "name": "text-accent-500",
+          "description": "Utility class: text-accent-500"
+        },
+        {
+          "name": "text-accent-600",
+          "description": "Utility class: text-accent-600"
+        },
+        {
+          "name": "text-base",
+          "description": "Utility class: text-base"
+        },
+        {
+          "name": "text-center",
+          "description": "Utility class: text-center"
+        },
+        {
+          "name": "text-error",
+          "description": "Utility class: text-error"
+        },
+        {
+          "name": "text-info",
+          "description": "Utility class: text-info"
+        },
+        {
+          "name": "text-justify",
+          "description": "Utility class: text-justify"
+        },
+        {
+          "name": "text-left",
+          "description": "Utility class: text-left"
+        },
+        {
+          "name": "text-lg",
+          "description": "Utility class: text-lg"
+        },
+        {
+          "name": "text-on-accent",
+          "description": "Utility class: text-on-accent"
+        },
+        {
+          "name": "text-primary",
+          "description": "Utility class: text-primary"
+        },
+        {
+          "name": "text-primary-500",
+          "description": "Utility class: text-primary-500"
+        },
+        {
+          "name": "text-primary-600",
+          "description": "Utility class: text-primary-600"
+        },
+        {
+          "name": "text-primary-700",
+          "description": "Utility class: text-primary-700"
+        },
+        {
+          "name": "text-right",
+          "description": "Utility class: text-right"
+        },
+        {
+          "name": "text-secondary",
+          "description": "Utility class: text-secondary"
+        },
+        {
+          "name": "text-sm",
+          "description": "Utility class: text-sm"
+        },
+        {
+          "name": "text-success",
+          "description": "Utility class: text-success"
+        },
+        {
+          "name": "text-tertiary",
+          "description": "Utility class: text-tertiary"
+        },
+        {
+          "name": "text-warning",
+          "description": "Utility class: text-warning"
+        },
+        {
+          "name": "text-xl",
+          "description": "Utility class: text-xl"
+        },
+        {
+          "name": "text-xs",
+          "description": "Utility class: text-xs"
+        },
+        {
+          "name": "top-0",
+          "description": "Utility class: top-0"
+        },
+        {
+          "name": "transition-all",
+          "description": "Utility class: transition-all"
+        },
+        {
+          "name": "transition-colors",
+          "description": "Utility class: transition-colors"
+        },
+        {
+          "name": "transition-none",
+          "description": "Utility class: transition-none"
+        },
+        {
+          "name": "transition-opacity",
+          "description": "Utility class: transition-opacity"
+        },
+        {
+          "name": "transition-shadow",
+          "description": "Utility class: transition-shadow"
+        },
+        {
+          "name": "transition-transform",
+          "description": "Utility class: transition-transform"
+        },
+        {
+          "name": "underline",
+          "description": "Utility class: underline"
+        },
+        {
+          "name": "uppercase",
+          "description": "Utility class: uppercase"
+        },
+        {
+          "name": "visible",
+          "description": "Utility class: visible"
+        },
+        {
+          "name": "w-auto",
+          "description": "Utility class: w-auto"
+        },
+        {
+          "name": "w-fit",
+          "description": "Utility class: w-fit"
+        },
+        {
+          "name": "w-full",
+          "description": "Utility class: w-full"
+        },
+        {
+          "name": "w-max",
+          "description": "Utility class: w-max"
+        },
+        {
+          "name": "w-min",
+          "description": "Utility class: w-min"
+        },
+        {
+          "name": "w-screen",
+          "description": "Utility class: w-screen"
+        },
+        {
+          "name": "whitespace-normal",
+          "description": "Utility class: whitespace-normal"
+        },
+        {
+          "name": "whitespace-nowrap",
+          "description": "Utility class: whitespace-nowrap"
+        },
+        {
+          "name": "whitespace-pre",
+          "description": "Utility class: whitespace-pre"
+        },
+        {
+          "name": "whitespace-pre-wrap",
+          "description": "Utility class: whitespace-pre-wrap"
+        },
+        {
+          "name": "z-0",
+          "description": "Utility class: z-0"
+        },
+        {
+          "name": "z-10",
+          "description": "Utility class: z-10"
+        },
+        {
+          "name": "z-20",
+          "description": "Utility class: z-20"
+        },
+        {
+          "name": "z-30",
+          "description": "Utility class: z-30"
+        },
+        {
+          "name": "z-40",
+          "description": "Utility class: z-40"
+        },
+        {
+          "name": "z-50",
+          "description": "Utility class: z-50"
+        },
+        {
+          "name": "z-auto",
+          "description": "Utility class: z-auto"
+        }
       ]
     },
     {
-      "name": "data-typewriter-loop",
-      "description": "Loop the typing animation. Example: data-typewriter-loop=\"true\"",
+      "name": "hachiwaIcons",
       "values": [
-        {"name": "true", "description": "Loop continuously"},
-        {"name": "false", "description": "Type once"}
+        {
+          "name": "alert",
+          "description": "Icon: alert"
+        },
+        {
+          "name": "arrow-down",
+          "description": "Icon: arrow-down"
+        },
+        {
+          "name": "arrow-left",
+          "description": "Icon: arrow-left"
+        },
+        {
+          "name": "arrow-right",
+          "description": "Icon: arrow-right"
+        },
+        {
+          "name": "arrow-up",
+          "description": "Icon: arrow-up"
+        },
+        {
+          "name": "bell",
+          "description": "Icon: bell"
+        },
+        {
+          "name": "bookmark",
+          "description": "Icon: bookmark"
+        },
+        {
+          "name": "calendar",
+          "description": "Icon: calendar"
+        },
+        {
+          "name": "camera",
+          "description": "Icon: camera"
+        },
+        {
+          "name": "check",
+          "description": "Icon: check"
+        },
+        {
+          "name": "chevron-down",
+          "description": "Icon: chevron-down"
+        },
+        {
+          "name": "chevron-left",
+          "description": "Icon: chevron-left"
+        },
+        {
+          "name": "chevron-right",
+          "description": "Icon: chevron-right"
+        },
+        {
+          "name": "chevron-up",
+          "description": "Icon: chevron-up"
+        },
+        {
+          "name": "clock",
+          "description": "Icon: clock"
+        },
+        {
+          "name": "close",
+          "description": "Icon: close"
+        },
+        {
+          "name": "code",
+          "description": "Icon: code"
+        },
+        {
+          "name": "copy",
+          "description": "Icon: copy"
+        },
+        {
+          "name": "credit-card",
+          "description": "Icon: credit-card"
+        },
+        {
+          "name": "dollar",
+          "description": "Icon: dollar"
+        },
+        {
+          "name": "download",
+          "description": "Icon: download"
+        },
+        {
+          "name": "edit",
+          "description": "Icon: edit"
+        },
+        {
+          "name": "eye",
+          "description": "Icon: eye"
+        },
+        {
+          "name": "eye-off",
+          "description": "Icon: eye-off"
+        },
+        {
+          "name": "file",
+          "description": "Icon: file"
+        },
+        {
+          "name": "flag",
+          "description": "Icon: flag"
+        },
+        {
+          "name": "folder",
+          "description": "Icon: folder"
+        },
+        {
+          "name": "gift",
+          "description": "Icon: gift"
+        },
+        {
+          "name": "globe",
+          "description": "Icon: globe"
+        },
+        {
+          "name": "heart",
+          "description": "Icon: heart"
+        },
+        {
+          "name": "home",
+          "description": "Icon: home"
+        },
+        {
+          "name": "image",
+          "description": "Icon: image"
+        },
+        {
+          "name": "info",
+          "description": "Icon: info"
+        },
+        {
+          "name": "link",
+          "description": "Icon: link"
+        },
+        {
+          "name": "lock",
+          "description": "Icon: lock"
+        },
+        {
+          "name": "mail",
+          "description": "Icon: mail"
+        },
+        {
+          "name": "map-pin",
+          "description": "Icon: map-pin"
+        },
+        {
+          "name": "menu",
+          "description": "Icon: menu"
+        },
+        {
+          "name": "message",
+          "description": "Icon: message"
+        },
+        {
+          "name": "minus",
+          "description": "Icon: minus"
+        },
+        {
+          "name": "music",
+          "description": "Icon: music"
+        },
+        {
+          "name": "phone",
+          "description": "Icon: phone"
+        },
+        {
+          "name": "play",
+          "description": "Icon: play"
+        },
+        {
+          "name": "plus",
+          "description": "Icon: plus"
+        },
+        {
+          "name": "search",
+          "description": "Icon: search"
+        },
+        {
+          "name": "settings",
+          "description": "Icon: settings"
+        },
+        {
+          "name": "share",
+          "description": "Icon: share"
+        },
+        {
+          "name": "shopping-cart",
+          "description": "Icon: shopping-cart"
+        },
+        {
+          "name": "star",
+          "description": "Icon: star"
+        },
+        {
+          "name": "tag",
+          "description": "Icon: tag"
+        },
+        {
+          "name": "trash",
+          "description": "Icon: trash"
+        },
+        {
+          "name": "unlock",
+          "description": "Icon: unlock"
+        },
+        {
+          "name": "upload",
+          "description": "Icon: upload"
+        },
+        {
+          "name": "user",
+          "description": "Icon: user"
+        },
+        {
+          "name": "video",
+          "description": "Icon: video"
+        },
+        {
+          "name": "zap",
+          "description": "Icon: zap"
+        }
       ]
     },
     {
-      "name": "data-theme-switcher",
-      "description": "Enable theme switching on a <select> element. Auto-saves to localStorage."
-    },
-    {
-      "name": "data-active-state",
-      "description": "Enable active state management for navigation links. Adds 'active' class to clicked link."
-    },
-    {
-      "name": "data-smooth-scroll",
-      "description": "Enable smooth scrolling for anchor links. Example: <a href=\"#section\" data-smooth-scroll>"
-    },
-    {
-      "name": "data-modal-open",
-      "description": "ID of modal to open on click. Example: data-modal-open=\"myModal\"",
-      "valueSet": "string"
-    },
-    {
-      "name": "data-modal-close",
-      "description": "Close the current modal when clicked. Add to buttons inside modals."
-    },
-    {
-      "name": "data-tab",
-      "description": "ID of tab panel to show. Example: data-tab=\"tab1\"",
-      "valueSet": "string"
-    },
-    {
-      "name": "data-tabs",
-      "description": "Enable tab functionality for container. Add to parent element."
-    },
-    {
-      "name": "data-validate",
-      "description": "Enable form validation. Add to <form> element."
-    },
-    {
-      "name": "data-validate-email",
-      "description": "Validate input as email format. Add to email input fields."
-    },
-    {
-      "name": "data-scroll-reveal",
-      "description": "Reveal element when scrolled into view with fade-in effect."
-    },
-    {
-      "name": "data-scroll-animate",
-      "description": "Trigger animation when scrolled into view. Example: data-scroll-animate=\"fade-up\"",
+      "name": "typewriterSpeed",
       "values": [
-        {"name": "fade-up", "description": "Fade in from bottom"},
-        {"name": "fade-down", "description": "Fade in from top"},
-        {"name": "fade-left", "description": "Fade in from right"},
-        {"name": "fade-right", "description": "Fade in from left"},
-        {"name": "scale", "description": "Scale up from 80%"}
+        {
+          "name": "50",
+          "description": "Very fast (50ms)"
+        },
+        {
+          "name": "100",
+          "description": "Fast (100ms)"
+        },
+        {
+          "name": "150",
+          "description": "Normal (150ms)"
+        },
+        {
+          "name": "200",
+          "description": "Slow (200ms)"
+        }
       ]
-    },
-    {
-      "name": "data-scroll-delay",
-      "description": "Delay before scroll animation in milliseconds. Example: data-scroll-delay=\"200\"",
-      "valueSet": "number"
-    },
-    {
-      "name": "data-copy",
-      "description": "Text to copy to clipboard on click. Example: data-copy=\"npm install\"",
-      "valueSet": "string"
-    },
-    {
-      "name": "data-animate",
-      "description": "Animation to play on page load. Example: data-animate=\"fade\"",
-      "values": [
-        {"name": "fade", "description": "Fade in"},
-        {"name": "slide-up", "description": "Slide up from bottom"},
-        {"name": "slide-down", "description": "Slide down from top"},
-        {"name": "slide-left", "description": "Slide in from right"},
-        {"name": "slide-right", "description": "Slide in from left"},
-        {"name": "zoom", "description": "Zoom in from 80%"},
-        {"name": "bounce", "description": "Bounce animation (infinite)"},
-        {"name": "shake", "description": "Shake animation"},
-        {"name": "rotate", "description": "Rotate 360deg (infinite)"},
-        {"name": "pulse", "description": "Pulse animation (infinite)"}
-      ]
-    },
-    {
-      "name": "data-animate-delay",
-      "description": "Delay before animation starts in milliseconds. Example: data-animate-delay=\"300\"",
-      "valueSet": "number"
-    },
-    {
-      "name": "data-tooltip",
-      "description": "Tooltip text to display on hover. Example: data-tooltip=\"Click to copy\"",
-      "valueSet": "string"
-    },
-    {
-      "name": "data-dropdown",
-      "description": "Enable dropdown functionality. Add to parent container."
-    },
-    {
-      "name": "data-dropdown-trigger",
-      "description": "Element that triggers the dropdown. Add to button."
-    },
-    {
-      "name": "data-dropdown-content",
-      "description": "Dropdown content panel. Add to dropdown menu."
-    },
-    {
-      "name": "data-lazy-src",
-      "description": "Image source for lazy loading. Example: data-lazy-src=\"image.jpg\"",
-      "valueSet": "string"
-    },
-    {
-      "name": "data-parallax",
-      "description": "Parallax scroll speed multiplier. Example: data-parallax=\"0.5\" (slower) or data-parallax=\"1.5\" (faster)",
-      "valueSet": "number"
-    },
-    {
-      "name": "data-hamburger",
-      "description": "Enable hamburger menu functionality. Add to hamburger button."
-    },
-    {
-      "name": "data-mobile-menu",
-      "description": "Mobile menu panel. Add to nav menu that appears on mobile."
     }
   ]
 }

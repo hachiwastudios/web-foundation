@@ -1,0 +1,35 @@
+/* THEMES - CORPORATE */
+
+[data-theme="corporate"] {
+  --primary-500: #1e40af;
+  --primary-600: #1e3a8a;
+  --primary-700: #1e3a70;
+
+  --accent-500: #0891b2;
+  --accent-600: #0e7490;
+
+  --bg-body: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-secondary: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-tertiary: #64748b;
+  --text-on-accent: #FFFFFF;
+  --border-subtle: #e2e8f0;
+  --border-medium: #cbd5e1;
+  --border-bold: #94a3b8;
+
+  --btn-primary-bg: #1e40af;
+  --btn-primary-hover: #1e3a8a;
+  --btn-primary-text: #FFFFFF;
+
+  --status-success: #059669;
+  --status-error: #dc2626;
+  --status-warning: #d97706;
+  --status-info: #0284c7;
+}
+
+/* =========================
+   THEME 8: NATURE (EARTHY)
+   Best for: Environmental sites, organic brands, wellness
+   ========================= */

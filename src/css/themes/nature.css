@@ -1,0 +1,35 @@
+/* THEMES - NATURE */
+
+[data-theme="nature"] {
+  --primary-500: #16a34a;
+  --primary-600: #15803d;
+  --primary-700: #166534;
+
+  --accent-500: #92400e;
+  --accent-600: #78350f;
+
+  --bg-body: #f7f8f3;
+  --bg-surface: #ffffff;
+  --bg-surface-secondary: #ecf3e8;
+  --text-primary: #14532d;
+  --text-secondary: #166534;
+  --text-tertiary: #4d7c0f;
+  --text-on-accent: #FFFFFF;
+  --border-subtle: #d9e8d1;
+  --border-medium: #bfd8b3;
+  --border-bold: #84cc16;
+
+  --btn-primary-bg: #16a34a;
+  --btn-primary-hover: #15803d;
+  --btn-primary-text: #FFFFFF;
+
+  --status-success: #22c55e;
+  --status-error: #dc2626;
+  --status-warning: #f59e0b;
+  --status-info: #0891b2;
+}
+
+/* =========================
+   THEME 9: CREATIVE (VIBRANT)
+   Best for: Creative agencies, art portfolios, bold brands
+   ========================= */

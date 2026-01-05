@@ -1852,7 +1852,7 @@ body {
 
 /* Icon Colors (uses currentColor by default) */
 .icon-primary { stroke: var(--primary-500); }
-.icon-accent { stroke: --accent-500); }
+.icon-accent { stroke: var(--accent-500); }
 .icon-success { stroke: var(--status-success); }
 .icon-error { stroke: var(--status-error); }
 .icon-warning { stroke: var(--status-warning); }

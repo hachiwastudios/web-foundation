@@ -1,0 +1,100 @@
+{
+  "Web Foundation Container": {
+    "prefix": "wf-container",
+    "body": [
+      "<div class=\"container mx-auto p-8\">",
+      "\t$0",
+      "</div>"
+    ],
+    "description": "Responsive container with auto margins"
+  },
+  "Web Foundation Card": {
+    "prefix": "wf-card",
+    "body": [
+      "<div class=\"card p-6\">",
+      "\t<h3 class=\"text-xl font-semibold mb-2\">$1</h3>",
+      "\t<p class=\"text-secondary\">$2</p>",
+      "\t$0",
+      "</div>"
+    ],
+    "description": "Card component with heading and text"
+  },
+  "Web Foundation Button": {
+    "prefix": "wf-button",
+    "body": [
+      "<button class=\"btn btn-primary\">",
+      "\t$1",
+      "</button>"
+    ],
+    "description": "Primary button"
+  },
+  "Web Foundation Button with Icon": {
+    "prefix": "wf-button-icon",
+    "body": [
+      "<button class=\"btn btn-primary\">",
+      "\t<i data-icon=\"$1\" class=\"icon\"></i>",
+      "\t$2",
+      "</button>"
+    ],
+    "description": "Button with icon"
+  },
+  "Web Foundation Icon": {
+    "prefix": "wf-icon",
+    "body": [
+      "<i data-icon=\"$1\" data-variant=\"${2|outlined,solid|}\" class=\"icon\"></i>"
+    ],
+    "description": "Icon with variant selection"
+  },
+  "Web Foundation Grid": {
+    "prefix": "wf-grid",
+    "body": [
+      "<div class=\"grid md:grid-cols-2 lg:grid-cols-3 gap-6\">",
+      "\t$0",
+      "</div>"
+    ],
+    "description": "Responsive grid layout"
+  },
+  "Web Foundation Flex": {
+    "prefix": "wf-flex",
+    "body": [
+      "<div class=\"flex gap-4\">",
+      "\t$0",
+      "</div>"
+    ],
+    "description": "Flex container with gap"
+  },
+  "Web Foundation Navbar": {
+    "prefix": "wf-navbar",
+    "body": [
+      "<nav class=\"flex justify-between items-center p-4 bg-surface\">",
+      "\t<div class=\"text-xl font-bold\">$1</div>",
+      "\t<div class=\"flex gap-4\">",
+      "\t\t$0",
+      "\t</div>",
+      "</nav>"
+    ],
+    "description": "Navigation bar"
+  },
+  "Web Foundation Hero Section": {
+    "prefix": "wf-hero",
+    "body": [
+      "<section class=\"text-center p-12 bg-primary text-white\">",
+      "\t<h1 class=\"text-5xl font-bold mb-4\">$1</h1>",
+      "\t<p class=\"text-xl mb-8\">$2</p>",
+      "\t<button class=\"btn btn-accent\">$3</button>",
+      "</section>"
+    ],
+    "description": "Hero section"
+  },
+  "Web Foundation Form": {
+    "prefix": "wf-form",
+    "body": [
+      "<form class=\"flex flex-col gap-4\">",
+      "\t<input type=\"text\" class=\"input\" placeholder=\"$1\">",
+      "\t<textarea class=\"textarea\" placeholder=\"$2\"></textarea>",
+      "\t<button type=\"submit\" class=\"btn btn-primary\">$3</button>",
+      "</form>"
+    ],
+    "description": "Form with inputs"
+  }
+}

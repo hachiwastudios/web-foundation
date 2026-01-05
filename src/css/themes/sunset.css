@@ -1,0 +1,38 @@
+/* THEMES - SUNSET */
+
+[data-theme="sunset"] {
+  --primary-500: #f59e0b;
+  --primary-600: #d97706;
+  --primary-700: #b45309;
+
+  --accent-500: #ef4444;
+  --accent-600: #dc2626;
+
+  --bg-body: #fffaf0;
+  --bg-surface: #ffffff;
+  --bg-surface-secondary: #fef3c7;
+  --text-primary: #78350f;
+  --text-secondary: #92400e;
+  --text-tertiary: #b45309;
+  --text-on-accent: #FFFFFF;
+  --border-subtle: #fde68a;
+  --border-medium: #fcd34d;
+  --border-bold: #fbbf24;
+
+  --btn-primary-bg: #f59e0b;
+  --btn-primary-hover: #d97706;
+  --btn-primary-text: #FFFFFF;
+
+  --status-success: #22c55e;
+  --status-error: #dc2626;
+  --status-warning: #f59e0b;
+  --status-info: #06b6d4;
+}
+
+/* =========================
+   BASE STYLES
+   ========================= */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}

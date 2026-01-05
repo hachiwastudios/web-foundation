@@ -1,0 +1,26 @@
+/* THEMES - PASTEL */
+
+[data-theme="pastel"] {
+  --primary-500: #c4b5fd;
+  --primary-600: #a78bfa;
+  --primary-700: #8b5cf6;
+  --accent-500: #f9a8d4;
+  --accent-600: #f472b6;
+  --bg-body: #faf5ff;
+  --bg-surface: #ffffff;
+  --bg-surface-secondary: #f3e8ff;
+  --text-primary: #581c87;
+  --text-secondary: #7e22ce;
+  --text-tertiary: #9333ea;
+  --border-subtle: #e9d5ff;
+  --border-medium: #d8b4fe;
+  --border-bold: #c084fc;
+  --status-success: #86efac;
+  --status-error: #fca5a5;
+  --status-warning: #fcd34d;
+  --status-info: #93c5fd;
+}
+
+/* ===============================================================
+   ADDITIONAL THEME: OCEAN
+   =============================================================== */

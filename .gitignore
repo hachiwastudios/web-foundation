@@ -20,6 +20,9 @@ desktop.ini
 # Build outputs
 dist/
 build/
+*.min.css
+*.min.js
+*.map
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -38,3 +41,8 @@ temp/
 # Project-specific excludes
 PUBLISHING-GUIDE.md
 .claude/
+V2-SUMMARY.md
+
+# VSCode extension node_modules
+vscode-extension/node_modules/
+vscode-extension/*.vsix

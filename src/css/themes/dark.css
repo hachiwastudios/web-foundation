@@ -1,0 +1,57 @@
+/* THEMES - DARK */
+
+[data-theme="dark"] {
+  --primary-500: #60a5fa;
+  --primary-600: #3b82f6;
+  --primary-700: #2563eb;
+
+  --accent-500: #2dd4bf;
+  --accent-600: #14b8a6;
+
+  --bg-body: #0f1419;
+  --bg-surface: #1a1f2e;
+  --bg-surface-secondary: #242938;
+  --text-primary: #e4e7eb;
+  --text-secondary: #a8b3c1;
+  --text-tertiary: #6b7280;
+  --text-on-accent: #FFFFFF;
+  --border-subtle: #2d3748;
+  --border-medium: #374151;
+  --border-bold: #4b5563;
+
+  --btn-primary-bg: #3b82f6;
+  --btn-primary-hover: #60a5fa;
+  --btn-primary-text: #FFFFFF;
+
+  --status-success: #10b981;
+  --status-error: #ef4444;
+  --status-warning: #f59e0b;
+  --status-info: #3b82f6;
+}
+
+/* =========================
+   THEME 3: PORTFOLIO (ELEGANT)
+   Best for: Personal portfolios, creative agencies, luxury brands
+   ========================= */
+[data-theme="dark"] .glass {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* =================================================================
+   AUTO-RESPONSIVE UTILITIES
+   ================================================================= */
+
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-6);
+}
+
+.auto-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+[data-theme="dark"] select,

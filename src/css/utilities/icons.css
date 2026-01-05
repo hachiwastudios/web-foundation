@@ -1,0 +1,159 @@
+/* UTILITIES - ICONS */
+
+/* Icon Support */
+.btn-icon {
+  padding: 0.5rem;
+  aspect-ratio: 1;
+  min-width: 2.5rem;
+}
+
+/* Loading State */
+.btn-loading {
+  position: relative;
+  color: transparent;
+  pointer-events: none;
+}
+
+.btn-loading::after {
+  content: '';
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: btn-spin 0.6s linear infinite;
+}
+
+@keyframes btn-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ===============================================================
+   RESPONSIVE UTILITIES ENHANCEMENTS
+   =============================================================== */
+
+.icon {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Icon Sizes */
+.icon-xs { width: 0.75rem; height: 0.75rem; }
+.icon-sm { width: 1rem; height: 1rem; }
+.icon-md { width: 1.25rem; height: 1.25rem; }
+.icon-lg { width: 1.5rem; height: 1.5rem; }
+.icon-xl { width: 2rem; height: 2rem; }
+.icon-2xl { width: 2.5rem; height: 2.5rem; }
+.icon-3xl { width: 3rem; height: 3rem; }
+
+/* Icon Colors (uses currentColor by default) */
+.icon-primary { stroke: var(--primary-500); }
+.icon-accent { stroke: var(--accent-500); }
+.icon-success { stroke: var(--status-success); }
+.icon-error { stroke: var(--status-error); }
+.icon-warning { stroke: var(--status-warning); }
+.icon-info { stroke: var(--status-info); }
+
+/* Filled icons */
+.icon-fill { fill: currentColor; stroke: none; }
+.icon-fill-primary { fill: var(--primary-500); stroke: none; }
+
+/* Icon in button */
+.btn .icon {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.btn-icon .icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* ===============================================================
+   MOBILE MENU & HAMBURGER STYLES
+   =============================================================== */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 60;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 73px;
+  left: 0;
+  right: 0;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  z-index: 50;
+  animation: slideDown 0.3s ease;
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+.mobile-menu a {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.mobile-menu a:hover,
+.mobile-menu a.active {
+  background-color: var(--bg-surface-secondary);
+  color: var(--primary-500);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

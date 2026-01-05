@@ -1,0 +1,35 @@
+/* THEMES - MINIMAL */
+
+[data-theme="minimal"] {
+  --primary-500: #000000;
+  --primary-600: #1a1a1a;
+  --primary-700: #2a2a2a;
+
+  --accent-500: #4a4a4a;
+  --accent-600: #3a3a3a;
+
+  --bg-body: #ffffff;
+  --bg-surface: #fafafa;
+  --bg-surface-secondary: #f5f5f5;
+  --text-primary: #000000;
+  --text-secondary: #4a4a4a;
+  --text-tertiary: #7a7a7a;
+  --text-on-accent: #FFFFFF;
+  --border-subtle: #e5e5e5;
+  --border-medium: #d1d1d1;
+  --border-bold: #a8a8a8;
+
+  --btn-primary-bg: #000000;
+  --btn-primary-hover: #1a1a1a;
+  --btn-primary-text: #FFFFFF;
+
+  --status-success: #22c55e;
+  --status-error: #ef4444;
+  --status-warning: #f59e0b;
+  --status-info: #3b82f6;
+}
+
+/* =========================
+   THEME 11: SUNSET (WARM)
+   Best for: Food blogs, lifestyle sites, warm brands
+   ========================= */

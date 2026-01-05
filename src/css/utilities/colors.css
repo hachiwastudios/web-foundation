@@ -1,0 +1,24 @@
+/* UTILITIES - COLORS */
+
+/* Background Colors */
+.bg-body { background-color: var(--bg-body); }
+.bg-surface { background-color: var(--bg-surface); }
+.bg-surface-secondary { background-color: var(--bg-surface-secondary); }
+
+.bg-primary-500 { background-color: var(--primary-500); }
+.bg-primary-600 { background-color: var(--primary-600); }
+.bg-primary-700 { background-color: var(--primary-700); }
+
+.bg-accent-500 { background-color: var(--accent-500); }
+.bg-accent-600 { background-color: var(--accent-600); }
+
+.bg-success { background-color: var(--status-success); }
+.bg-error { background-color: var(--status-error); }
+.bg-warning { background-color: var(--status-warning); }
+.bg-info { background-color: var(--status-info); }
+
+.bg-transparent { background-color: transparent; }
+
+/* =========================
+   SPACING UTILITIES
+   ========================= */
